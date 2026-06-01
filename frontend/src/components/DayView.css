@@ -1,0 +1,99 @@
+.day-view {
+  flex: 1;
+  overflow: auto;
+}
+
+.day-view-content {
+  min-width: max-content;
+}
+
+.day-header {
+  position: sticky;
+  top: 0;
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+  z-index: 10;
+}
+
+.time-slot {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+  min-height: 5rem;
+  transition: background-color 0.2s;
+}
+
+.time-slot:hover {
+  background-color: #f9fafb;
+}
+
+.time-slot-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.time-label {
+  font-weight: 600;
+  color: #4b5563;
+  width: 8rem;
+  flex-shrink: 0;
+}
+
+.slot-content {
+  flex: 1;
+}
+
+.student-assignment {
+  background-color: #dbeafe;
+  border-inline-start: 4px solid #2563eb;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.assignment-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.student-info svg {
+  color: #2563eb;
+}
+
+.student-info-name {
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+.student-info-phone {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.remove-button {
+  color: #ef4444;
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.remove-button:hover {
+  color: #b91c1c;
+}
+
+.empty-slot {
+  color: #9ca3af;
+  font-style: italic;
+}

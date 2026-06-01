@@ -1,0 +1,124 @@
+.se-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.se-modal {
+  background: #fff;
+  width: 520px;
+  max-width: 90vw;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.se-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.se-body {
+  padding: 16px;
+}
+
+.se-top-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.se-export, .se-import-label {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.se-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.se-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.se-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.se-phone {
+  color: #374151;
+}
+
+.se-remove {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.se-remove:hover { background: #fecaca; }
+
+.se-divider { height: 1px; background: #e5e7eb; margin: 12px 0; }
+
+.se-add {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 8px;
+}
+
+.se-input {
+  height: 36px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+.se-add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.se-add-btn:hover { background: #1d4ed8; }
+
+.se-error { color: #b91c1c; margin-top: 8px; }
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.se-empty { color: #6b7280; text-align: center; padding: 8px 0; }

@@ -1,0 +1,96 @@
+.week-view {
+  flex: 1;
+  overflow: auto;
+}
+
+.week-view-content {
+  min-width: max-content;
+}
+
+.week-header {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  position: sticky;
+  top: 0;
+  background-color: #2563eb;
+  color: white;
+  z-index: 10;
+}
+
+.week-header-cell {
+  padding: 1rem;
+  border-inline-end: 1px solid #1d4ed8;
+  text-align: center;
+}
+
+.week-header-cell:first-child {
+  background-color: #2563eb;
+}
+
+.day-name {
+  font-weight: 600;
+}
+
+.day-date {
+  font-size: 0.875rem;
+}
+
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.week-time-cell {
+  padding: 1rem;
+  border-inline-end: 1px solid #e5e7eb;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.week-slot-cell {
+  padding: 0.5rem;
+  border-inline-end: 1px solid #e5e7eb;
+  min-height: 5rem;
+  transition: background-color 0.2s;
+}
+
+.week-slot-cell:hover {
+  background-color: #f9fafb;
+}
+
+.week-student-assignment {
+  background-color: #dbeafe;
+  border-inline-start: 2px solid #2563eb;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.week-student-name {
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+.week-remove-button {
+  color: #ef4444;
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.week-remove-button:hover {
+  color: #b91c1c;
+}
+
+.week-empty-slot {
+  color: #d1d5db;
+  font-size: 0.75rem;
+}

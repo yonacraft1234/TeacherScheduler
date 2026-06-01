@@ -1,0 +1,57 @@
+.view-toggle-container {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.view-toggle-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-mode-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-mode-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-mode-button.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.view-mode-button.inactive {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.view-mode-button.inactive:hover {
+  background-color: #d1d5db;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-button:hover {
+  background-color: #d1d5db;
+}

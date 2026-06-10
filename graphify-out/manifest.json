@@ -1,0 +1,102 @@
+{
+  "backend/index.js": {
+    "mtime": 1772821659.7710512,
+    "ast_hash": "1e7020247aeb2fafd0f0637bf7683a06",
+    "semantic_hash": ""
+  },
+  "backend/package.json": {
+    "mtime": 1761512902.60254,
+    "ast_hash": "1bf5f010a36b3e23ba0de632d904b4ef",
+    "semantic_hash": ""
+  },
+  "frontend/eslint.config.js": {
+    "mtime": 1761494739.9145122,
+    "ast_hash": "ea5fa9590bc5a8caf28851562aaa0b09",
+    "semantic_hash": ""
+  },
+  "frontend/package.json": {
+    "mtime": 1762462364.6165488,
+    "ast_hash": "ba3ec10a754f493800a27595b29bcbc8",
+    "semantic_hash": ""
+  },
+  "frontend/src/App.jsx": {
+    "mtime": 1762462475.4260845,
+    "ast_hash": "2f9733ee135ee0d2ea09156ccb5130dc",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/DayView.jsx": {
+    "mtime": 1762006767.0622885,
+    "ast_hash": "d9d60ce6424a2dff8248cbf592a31e14",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/Header.jsx": {
+    "mtime": 1761507261.9886494,
+    "ast_hash": "dbca6eaf79ac39ddc2ce86ef03d24c05",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/Sidebar.jsx": {
+    "mtime": 1762465080.5224123,
+    "ast_hash": "c0d9bc95aa124ff46c15cfffac4d1c27",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/StudentsEditor.jsx": {
+    "mtime": 1761507162.700992,
+    "ast_hash": "33275c3ff2ff3fccd759e743b311f6b0",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/ViewToggle.jsx": {
+    "mtime": 1761506980.4841018,
+    "ast_hash": "225ad8c1284efd21536716c1d37e72cc",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/WeekView.jsx": {
+    "mtime": 1762006762.0543416,
+    "ast_hash": "15b2e9270d8cb5f12d0d75417090d148",
+    "semantic_hash": ""
+  },
+  "frontend/src/context/StudentsContext.jsx": {
+    "mtime": 1761512942.3732302,
+    "ast_hash": "3fe8bf030110ec9347c29e17ab691575",
+    "semantic_hash": ""
+  },
+  "frontend/src/main.jsx": {
+    "mtime": 1761504694.332166,
+    "ast_hash": "1f9e125e2f7128f80397263d9467c7cb",
+    "semantic_hash": ""
+  },
+  "frontend/src/socket.js": {
+    "mtime": 1761512909.7027192,
+    "ast_hash": "dbe60b0b7c9e55dda2c9f75dab88bf32",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/constants.js": {
+    "mtime": 1761507019.884508,
+    "ast_hash": "603414c6a7270c4308456f526417b0e2",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/dateUtils.js": {
+    "mtime": 1761496587.196049,
+    "ast_hash": "2ce85ac0375cd9ec2db931cb1a91bde7",
+    "semantic_hash": ""
+  },
+  "frontend/vite.config.js": {
+    "mtime": 1761514335.6749084,
+    "ast_hash": "ee489acb96dc24263f7a8420853b9080",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1780336725.3430016,
+    "ast_hash": "30d30c1d83301e2d26ff9cc5885857d5",
+    "semantic_hash": ""
+  },
+  "frontend/README.md": {
+    "mtime": 1761494876.2657974,
+    "ast_hash": "9c093a523bfea4bb8ae6cec780dee9ab",
+    "semantic_hash": ""
+  },
+  "frontend/index.html": {
+    "mtime": 1761506946.6955402,
+    "ast_hash": "9ebf36344c978cad4128130e4b454e30",
+    "semantic_hash": ""
+  }
+}

@@ -1,38 +1,33 @@
 .sidebar {
-  width: 10rem;
-  background-color: white;
-  border-inline-end: 1px solid #e5e7eb;
-  padding: 1rem;
+  width: 13rem;
+  flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 16px;
   overflow-y: auto;
 }
 
 .sidebar-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #1f2937;
-  text-align: center;
-  font-weight: bold;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-2);
+  margin-bottom: 12px;
 }
 
-.students-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
+.students-list { display: flex; flex-direction: column; gap: 8px; }
 
 .student-card {
-  background-color: #eff6ff;
-  border: 1px solid #bfdbfe;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  cursor: move;
-  transition: background-color 0.2s;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-inline-start: 3px solid var(--primary);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  align-items: flex-start;
+  transition: background-color var(--ease), box-shadow var(--ease), transform var(--ease);
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -40,27 +35,24 @@
   cursor: grab;
 }
 
-/* On touch devices, block WebKit’s native drag (prevents “drag to search”) */
+/* On touch devices, block native WebKit drag (prevents drag-to-search) */
 @media (any-pointer: coarse) {
-  .student-card {
-    -webkit-user-drag: none;
-  }
+  .student-card { -webkit-user-drag: none; }
 }
 
 .student-card:hover {
-  background-color: #dbeafe;
+  background: var(--primary-soft);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
 }
 
-.student-card:active {
-  cursor: grabbing;
-}
+.student-card:active { cursor: grabbing; }
 
-.student-name {
-  font-weight: 500;
-  color: #1e3a8a;
-}
+.student-name { font-weight: 600; color: var(--text); }
 
 .student-phone {
-  font-size: 0.875rem;
-  color: #4b5563;
+  font-size: 0.8125rem;
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
 }

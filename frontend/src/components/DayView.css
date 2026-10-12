@@ -1,99 +1,74 @@
-.day-view {
-  flex: 1;
-  overflow: auto;
-}
+.day-view { flex: 1; overflow: auto; }
 
-.day-view-content {
-  min-width: max-content;
-}
+.day-view-content { min-width: max-content; }
 
 .day-header {
   position: sticky;
   top: 0;
-  background-color: #2563eb;
-  color: white;
-  padding: 1rem;
+  background: var(--surface);
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 16px;
   text-align: center;
-  font-weight: 600;
-  font-size: 1.125rem;
+  font-weight: 700;
+  font-size: 1.0625rem;
   z-index: 10;
 }
 
 .time-slot {
-  border-bottom: 1px solid #e5e7eb;
-  padding: 1rem;
-  min-height: 5rem;
-  transition: background-color 0.2s;
+  border-bottom: 1px solid var(--border);
+  padding: 10px 16px;
+  min-height: 4.5rem;
+  transition: background-color var(--ease);
 }
 
-.time-slot:hover {
-  background-color: #f9fafb;
-}
+.time-slot:hover { background: var(--surface-2); }
 
-.time-slot-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
+.time-slot-content { display: flex; align-items: center; gap: 16px; }
 
 .time-label {
+  white-space: nowrap;
   font-weight: 600;
-  color: #4b5563;
-  width: 8rem;
+  color: var(--text-2);
+  width: 7rem;
   flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
 }
 
-.slot-content {
-  flex: 1;
-}
+.slot-content { flex: 1; }
 
 .student-assignment {
-  background-color: #dbeafe;
-  border-inline-start: 4px solid #2563eb;
-  padding: 0.75rem;
-  border-radius: 0.25rem;
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-soft-2);
+  border-inline-start: 4px solid var(--primary);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
 }
 
-.assignment-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+.assignment-details { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 
-.student-info {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.student-info svg {
-  color: #2563eb;
-}
-
-.student-info-name {
-  font-weight: 500;
-  color: #1e3a8a;
-}
-
-.student-info-phone {
-  font-size: 0.875rem;
-  color: #4b5563;
-}
+.student-info { display: flex; align-items: center; gap: 8px; }
+.student-info svg { color: var(--primary); }
+.student-info-name { font-weight: 600; color: var(--primary-ink); }
+.student-info-phone { font-size: 0.875rem; color: var(--text-2); direction: ltr; font-variant-numeric: tabular-nums; }
 
 .remove-button {
-  color: #ef4444;
+  color: var(--danger);
   background: none;
-  border: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 4px 10px;
   font-size: 0.875rem;
-  cursor: pointer;
-  transition: color 0.2s;
+  font-weight: 500;
+  transition: background-color var(--ease), border-color var(--ease);
 }
 
-.remove-button:hover {
-  color: #b91c1c;
-}
+.remove-button:hover { background: var(--danger-soft); border-color: #fecaca; }
 
 .empty-slot {
-  color: #9ca3af;
-  font-style: italic;
+  color: var(--text-3);
+  font-size: 0.875rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
 }

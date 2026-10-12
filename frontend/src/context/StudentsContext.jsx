@@ -1,21 +1,14 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { socket } from '../socket';
+import { onSnapshot, setDoc, updateDoc, deleteField } from 'firebase/firestore';
+import { studentsRef } from '../firebase';
 
 const StudentsContext = createContext(null);
 
 export const StudentsProvider = ({ children }) => {
   const [students, setStudentsState] = useState({});
 
-  // Subscribe to students updates via sockets
-  useEffect(() => {
-    const onList = (data) => {
-      if (data && typeof data === 'object') setStudentsState(data);
-    };
-    socket.on('students:list', onList);
-    return () => {
-      socket.off('students:list', onList);
-    };
-  }, []);
+  // Subscribe to students updates via Firestore
+  useEffect(() => onSnapshot(studentsRef, (snap) => setStudentsState(snap.data() || {})), []);
 
   const addStudent = async (name, phone) => {
     const trimmed = String(name || '').trim();
@@ -23,33 +16,38 @@ export const StudentsProvider = ({ children }) => {
   if (students[trimmed]) return { ok: false, error: 'השם כבר קיים' };
     const digits = String(phone || '').replace(/\D/g, '');
   if (!digits) return { ok: false, error: 'מספר טלפון נדרש' };
-    return new Promise((resolve) => {
-      socket.emit('students:add', { name: trimmed, phone: digits }, (resp) => {
-        if (!resp?.ok) return resolve({ ok: false, error: resp?.error || 'נכשל הוספה' });
-        // State will update from 'students:list'
-        resolve({ ok: true });
-      });
-    });
+    try {
+      await setDoc(studentsRef, { [trimmed]: digits }, { merge: true });
+      return { ok: true };
+    } catch (e) {
+      return { ok: false, error: e.message || 'נכשל הוספה' };
+    }
   };
 
   const removeStudent = async (name) => {
     const trimmed = String(name || '').trim();
-    return new Promise((resolve) => {
-      socket.emit('students:remove', trimmed, (resp) => {
-        if (!resp?.ok) return resolve({ ok: false, error: resp?.error || 'נכשל להסיר' });
-        resolve({ ok: true });
-      });
-    });
+    try {
+      await updateDoc(studentsRef, { [trimmed]: deleteField() });
+      return { ok: true };
+    } catch (e) {
+      return { ok: false, error: e.message || 'נכשל להסיר' };
+    }
   };
 
   // Replace entire collection (used by Import JSON)
   const setStudents = async (obj) => {
-    return new Promise((resolve) => {
-      socket.emit('students:replace', obj || {}, (resp) => {
-        if (!resp?.ok) return resolve({ ok: false, error: resp?.error || 'נכשל לשמור' });
-        resolve({ ok: true });
-      });
-    });
+    const next = {};
+    for (const [k, v] of Object.entries(obj || {})) {
+      const n = String(k).trim();
+      const p = String(v || '').replace(/\D/g, '');
+      if (n && p) next[n] = p;
+    }
+    try {
+      await setDoc(studentsRef, next);
+      return { ok: true };
+    } catch (e) {
+      return { ok: false, error: e.message || 'נכשל לשמור' };
+    }
   };
 
   const value = useMemo(() => ({ students, addStudent, removeStudent, setStudents }), [students]);

@@ -400,12 +400,93 @@
       "norm_label": "whatsapp-web.js"
     },
     {
+      "label": "firebase.json",
+      "file_type": "code",
+      "source_file": "firebase.json",
+      "source_location": "L1",
+      "id": "firebase",
+      "community": 3,
+      "norm_label": "firebase.json"
+    },
+    {
+      "label": "firestore",
+      "file_type": "code",
+      "source_file": "firebase.json",
+      "source_location": "L2",
+      "id": "firebase_firestore",
+      "community": 3,
+      "norm_label": "firestore"
+    },
+    {
+      "label": "database",
+      "file_type": "code",
+      "source_file": "firebase.json",
+      "source_location": "L3",
+      "id": "firebase_firestore_database",
+      "community": 3,
+      "norm_label": "database"
+    },
+    {
+      "label": "location",
+      "file_type": "code",
+      "source_file": "firebase.json",
+      "source_location": "L4",
+      "id": "firebase_firestore_location",
+      "community": 3,
+      "norm_label": "location"
+    },
+    {
+      "label": "rules",
+      "file_type": "code",
+      "source_file": "firebase.json",
+      "source_location": "L5",
+      "id": "firebase_firestore_rules",
+      "community": 3,
+      "norm_label": "rules"
+    },
+    {
+      "label": "indexes",
+      "file_type": "code",
+      "source_file": "firebase.json",
+      "source_location": "L6",
+      "id": "firebase_firestore_indexes",
+      "community": 3,
+      "norm_label": "indexes"
+    },
+    {
+      "label": "firestore.indexes.json",
+      "file_type": "code",
+      "source_file": "firestore.indexes.json",
+      "source_location": "L1",
+      "id": "firestore_indexes",
+      "community": 9,
+      "norm_label": "firestore.indexes.json"
+    },
+    {
+      "label": "indexes",
+      "file_type": "code",
+      "source_file": "firestore.indexes.json",
+      "source_location": "L49",
+      "id": "firestore_indexes_indexes",
+      "community": 9,
+      "norm_label": "indexes"
+    },
+    {
+      "label": "fieldOverrides",
+      "file_type": "code",
+      "source_file": "firestore.indexes.json",
+      "source_location": "L50",
+      "id": "firestore_indexes_fieldoverrides",
+      "community": 9,
+      "norm_label": "fieldoverrides"
+    },
+    {
       "label": "eslint.config.js",
       "file_type": "code",
       "source_file": "frontend/eslint.config.js",
       "source_location": "L1",
       "id": "frontend_eslint_config",
-      "community": 8,
+      "community": 10,
       "norm_label": "eslint.config.js"
     },
     {
@@ -414,7 +495,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L1",
       "id": "frontend_package",
-      "community": 1,
+      "community": 5,
       "norm_label": "package.json"
     },
     {
@@ -423,7 +504,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L2",
       "id": "frontend_package_name",
-      "community": 1,
+      "community": 5,
       "norm_label": "name"
     },
     {
@@ -432,7 +513,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L3",
       "id": "frontend_package_private",
-      "community": 1,
+      "community": 5,
       "norm_label": "private"
     },
     {
@@ -441,7 +522,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L4",
       "id": "frontend_package_version",
-      "community": 1,
+      "community": 5,
       "norm_label": "version"
     },
     {
@@ -450,7 +531,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L5",
       "id": "frontend_package_type",
-      "community": 1,
+      "community": 5,
       "norm_label": "type"
     },
     {
@@ -459,7 +540,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L6",
       "id": "frontend_package_scripts",
-      "community": 1,
+      "community": 5,
       "norm_label": "scripts"
     },
     {
@@ -468,7 +549,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L7",
       "id": "frontend_package_scripts_dev",
-      "community": 1,
+      "community": 5,
       "norm_label": "dev"
     },
     {
@@ -477,7 +558,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L8",
       "id": "frontend_package_scripts_build",
-      "community": 1,
+      "community": 5,
       "norm_label": "build"
     },
     {
@@ -486,7 +567,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L9",
       "id": "frontend_package_scripts_lint",
-      "community": 1,
+      "community": 5,
       "norm_label": "lint"
     },
     {
@@ -495,7 +576,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L10",
       "id": "frontend_package_scripts_preview",
-      "community": 1,
+      "community": 5,
       "norm_label": "preview"
     },
     {
@@ -504,178 +585,187 @@
       "source_file": "frontend/package.json",
       "source_location": "L12",
       "id": "frontend_package_dependencies",
-      "community": 1,
+      "community": 3,
       "norm_label": "dependencies"
+    },
+    {
+      "label": "firebase",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "id": "frontend_package_dependencies_firebase",
+      "community": 3,
+      "norm_label": "firebase"
     },
     {
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "frontend_package_dependencies_lucide_react",
-      "community": 1,
+      "community": 3,
       "norm_label": "lucide-react"
     },
     {
       "label": "rdndmb-html5-to-touch",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "frontend_package_dependencies_rdndmb_html5_to_touch",
-      "community": 1,
+      "community": 3,
       "norm_label": "rdndmb-html5-to-touch"
     },
     {
       "label": "react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "frontend_package_dependencies_react",
-      "community": 1,
+      "community": 3,
       "norm_label": "react"
     },
     {
       "label": "react-dnd",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "frontend_package_dependencies_react_dnd",
-      "community": 1,
+      "community": 3,
       "norm_label": "react-dnd"
     },
     {
       "label": "react-dnd-html5-backend",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "frontend_package_dependencies_react_dnd_html5_backend",
-      "community": 1,
+      "community": 3,
       "norm_label": "react-dnd-html5-backend"
     },
     {
       "label": "react-dnd-multi-backend",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "frontend_package_dependencies_react_dnd_multi_backend",
-      "community": 1,
+      "community": 3,
       "norm_label": "react-dnd-multi-backend"
     },
     {
       "label": "react-dnd-touch-backend",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "frontend_package_dependencies_react_dnd_touch_backend",
-      "community": 1,
+      "community": 3,
       "norm_label": "react-dnd-touch-backend"
     },
     {
       "label": "react-dom",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "frontend_package_dependencies_react_dom",
-      "community": 1,
+      "community": 3,
       "norm_label": "react-dom"
     },
     {
       "label": "socket.io-client",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "frontend_package_dependencies_socket_io_client",
-      "community": 1,
+      "community": 3,
       "norm_label": "socket.io-client"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "id": "frontend_package_devdependencies",
-      "community": 5,
+      "community": 6,
       "norm_label": "devdependencies"
     },
     {
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "frontend_package_devdependencies_eslint_js",
-      "community": 5,
+      "community": 6,
       "norm_label": "@eslint/js"
     },
     {
       "label": "@types/react",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "frontend_package_devdependencies_types_react",
-      "community": 5,
+      "community": 6,
       "norm_label": "@types/react"
     },
     {
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "frontend_package_devdependencies_types_react_dom",
-      "community": 5,
+      "community": 6,
       "norm_label": "@types/react-dom"
     },
     {
       "label": "@vitejs/plugin-react-swc",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "frontend_package_devdependencies_vitejs_plugin_react_swc",
-      "community": 5,
+      "community": 6,
       "norm_label": "@vitejs/plugin-react-swc"
     },
     {
       "label": "eslint",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "id": "frontend_package_devdependencies_eslint",
-      "community": 5,
+      "community": 6,
       "norm_label": "eslint"
     },
     {
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "frontend_package_devdependencies_eslint_plugin_react_hooks",
-      "community": 5,
+      "community": 6,
       "norm_label": "eslint-plugin-react-hooks"
     },
     {
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "id": "frontend_package_devdependencies_eslint_plugin_react_refresh",
-      "community": 5,
+      "community": 6,
       "norm_label": "eslint-plugin-react-refresh"
     },
     {
       "label": "globals",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "id": "frontend_package_devdependencies_globals",
-      "community": 5,
+      "community": 6,
       "norm_label": "globals"
     },
     {
       "label": "vite",
       "file_type": "code",
       "source_file": "frontend/package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "frontend_package_devdependencies_vite",
-      "community": 5,
+      "community": 6,
       "norm_label": "vite"
     },
     {
@@ -684,16 +774,16 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L1",
       "id": "src_app",
-      "community": 3,
+      "community": 1,
       "norm_label": "app.jsx"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "src_app_app",
-      "community": 3,
+      "community": 1,
       "norm_label": "app()"
     },
     {
@@ -720,7 +810,7 @@
       "source_file": "frontend/src/components/Header.jsx",
       "source_location": "L1",
       "id": "components_header",
-      "community": 3,
+      "community": 1,
       "norm_label": "header.jsx"
     },
     {
@@ -729,7 +819,7 @@
       "source_file": "frontend/src/components/Header.jsx",
       "source_location": "L5",
       "id": "components_header_header",
-      "community": 3,
+      "community": 1,
       "norm_label": "header()"
     },
     {
@@ -738,7 +828,7 @@
       "source_file": "frontend/src/components/Sidebar.jsx",
       "source_location": "L1",
       "id": "components_sidebar",
-      "community": 3,
+      "community": 1,
       "norm_label": "sidebar.jsx"
     },
     {
@@ -747,7 +837,7 @@
       "source_file": "frontend/src/components/Sidebar.jsx",
       "source_location": "L5",
       "id": "components_sidebar_sidebar",
-      "community": 3,
+      "community": 1,
       "norm_label": "sidebar()"
     },
     {
@@ -756,7 +846,7 @@
       "source_file": "frontend/src/components/StudentsEditor.jsx",
       "source_location": "L1",
       "id": "components_studentseditor",
-      "community": 3,
+      "community": 1,
       "norm_label": "studentseditor.jsx"
     },
     {
@@ -765,7 +855,7 @@
       "source_file": "frontend/src/components/StudentsEditor.jsx",
       "source_location": "L6",
       "id": "components_studentseditor_studentseditor",
-      "community": 3,
+      "community": 1,
       "norm_label": "studentseditor()"
     },
     {
@@ -774,7 +864,7 @@
       "source_file": "frontend/src/components/ViewToggle.jsx",
       "source_location": "L1",
       "id": "components_viewtoggle",
-      "community": 3,
+      "community": 1,
       "norm_label": "viewtoggle.jsx"
     },
     {
@@ -783,7 +873,7 @@
       "source_file": "frontend/src/components/ViewToggle.jsx",
       "source_location": "L4",
       "id": "components_viewtoggle_viewtoggle",
-      "community": 3,
+      "community": 1,
       "norm_label": "viewtoggle()"
     },
     {
@@ -810,35 +900,89 @@
       "source_file": "frontend/src/context/StudentsContext.jsx",
       "source_location": "L1",
       "id": "context_studentscontext",
-      "community": 3,
+      "community": 1,
       "norm_label": "studentscontext.jsx"
     },
     {
       "label": "StudentsContext",
       "file_type": "code",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "context_studentscontext_studentscontext",
-      "community": 3,
+      "community": 1,
       "norm_label": "studentscontext"
     },
     {
       "label": "StudentsProvider()",
       "file_type": "code",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "context_studentscontext_studentsprovider",
-      "community": 3,
+      "community": 1,
       "norm_label": "studentsprovider()"
     },
     {
       "label": "useStudents()",
       "file_type": "code",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L62",
+      "source_location": "L60",
       "id": "context_studentscontext_usestudents",
-      "community": 3,
+      "community": 1,
       "norm_label": "usestudents()"
+    },
+    {
+      "label": "firebase.js",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L1",
+      "id": "src_firebase",
+      "community": 1,
+      "norm_label": "firebase.js"
+    },
+    {
+      "label": "firebaseConfig",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L5",
+      "id": "src_firebase_firebaseconfig",
+      "community": 1,
+      "norm_label": "firebaseconfig"
+    },
+    {
+      "label": "app",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L15",
+      "id": "src_firebase_app",
+      "community": 1,
+      "norm_label": "app"
+    },
+    {
+      "label": "db",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L17",
+      "id": "src_firebase_db",
+      "community": 1,
+      "norm_label": "db"
+    },
+    {
+      "label": "studentsRef",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L20",
+      "id": "src_firebase_studentsref",
+      "community": 1,
+      "norm_label": "studentsref"
+    },
+    {
+      "label": "lessonsRef",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L21",
+      "id": "src_firebase_lessonsref",
+      "community": 1,
+      "norm_label": "lessonsref"
     },
     {
       "label": "main.jsx",
@@ -846,26 +990,8 @@
       "source_file": "frontend/src/main.jsx",
       "source_location": "L1",
       "id": "src_main",
-      "community": 3,
+      "community": 1,
       "norm_label": "main.jsx"
-    },
-    {
-      "label": "socket.js",
-      "file_type": "code",
-      "source_file": "frontend/src/socket.js",
-      "source_location": "L1",
-      "id": "src_socket",
-      "community": 3,
-      "norm_label": "socket.js"
-    },
-    {
-      "label": "socket",
-      "file_type": "code",
-      "source_file": "frontend/src/socket.js",
-      "source_location": "L4",
-      "id": "src_socket_socket",
-      "community": 3,
-      "norm_label": "socket"
     },
     {
       "label": "constants.js",
@@ -954,7 +1080,7 @@
       "source_file": "frontend/vite.config.js",
       "source_location": "L1",
       "id": "frontend_vite_config",
-      "community": 9,
+      "community": 11,
       "norm_label": "vite.config.js"
     },
     {
@@ -963,7 +1089,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme",
-      "community": 6,
+      "community": 7,
       "norm_label": "readme.md"
     },
     {
@@ -972,7 +1098,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_teacherscheduler",
-      "community": 6,
+      "community": 7,
       "norm_label": "teacherscheduler"
     },
     {
@@ -981,7 +1107,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "readme_stack",
-      "community": 6,
+      "community": 7,
       "norm_label": "stack"
     },
     {
@@ -990,7 +1116,7 @@
       "source_file": "README.md",
       "source_location": "L13",
       "id": "readme_features",
-      "community": 6,
+      "community": 7,
       "norm_label": "features"
     },
     {
@@ -999,7 +1125,7 @@
       "source_file": "README.md",
       "source_location": "L21",
       "id": "readme_getting_started",
-      "community": 6,
+      "community": 7,
       "norm_label": "getting started"
     },
     {
@@ -1008,7 +1134,7 @@
       "source_file": "README.md",
       "source_location": "L23",
       "id": "readme_prerequisites",
-      "community": 6,
+      "community": 7,
       "norm_label": "prerequisites"
     },
     {
@@ -1017,7 +1143,7 @@
       "source_file": "README.md",
       "source_location": "L28",
       "id": "readme_backend",
-      "community": 6,
+      "community": 7,
       "norm_label": "backend"
     },
     {
@@ -1026,7 +1152,7 @@
       "source_file": "README.md",
       "source_location": "L42",
       "id": "readme_frontend",
-      "community": 6,
+      "community": 7,
       "norm_label": "frontend"
     },
     {
@@ -1035,7 +1161,7 @@
       "source_file": "README.md",
       "source_location": "L52",
       "id": "readme_data",
-      "community": 6,
+      "community": 7,
       "norm_label": "data"
     },
     {
@@ -1044,7 +1170,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L1",
       "id": "frontend_readme",
-      "community": 7,
+      "community": 8,
       "norm_label": "readme.md"
     },
     {
@@ -1053,7 +1179,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L1",
       "id": "frontend_readme_react_vite",
-      "community": 7,
+      "community": 8,
       "norm_label": "react + vite"
     },
     {
@@ -1062,7 +1188,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L10",
       "id": "frontend_readme_react_compiler",
-      "community": 7,
+      "community": 8,
       "norm_label": "react compiler"
     },
     {
@@ -1071,7 +1197,7 @@
       "source_file": "frontend/README.md",
       "source_location": "L14",
       "id": "frontend_readme_expanding_the_eslint_configuration",
-      "community": 7,
+      "community": 8,
       "norm_label": "expanding the eslint configuration"
     }
   ],
@@ -1576,6 +1702,87 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "firebase.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "firebase",
+      "target": "firebase_firestore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import",
+      "source": "frontend_package_dependencies_firebase",
+      "target": "firebase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "firebase.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "firebase_firestore",
+      "target": "firebase_firestore_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "firebase.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "firebase_firestore",
+      "target": "firebase_firestore_indexes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "firebase.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "firebase_firestore",
+      "target": "firebase_firestore_location",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "firebase.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "firebase_firestore",
+      "target": "firebase_firestore_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "firestore.indexes.json",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "firestore_indexes",
+      "target": "firestore_indexes_fieldoverrides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "firestore.indexes.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "firestore_indexes",
+      "target": "firestore_indexes_indexes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/package.json",
       "source_location": "L12",
       "weight": 1.0,
@@ -1587,7 +1794,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "source": "frontend_package",
       "target": "frontend_package_devdependencies",
@@ -1690,7 +1897,7 @@
       "source_location": "L13",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_lucide_react",
+      "target": "frontend_package_dependencies_firebase",
       "confidence_score": 1.0
     },
     {
@@ -1700,7 +1907,7 @@
       "source_location": "L14",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_rdndmb_html5_to_touch",
+      "target": "frontend_package_dependencies_lucide_react",
       "confidence_score": 1.0
     },
     {
@@ -1710,7 +1917,7 @@
       "source_location": "L15",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react",
+      "target": "frontend_package_dependencies_rdndmb_html5_to_touch",
       "confidence_score": 1.0
     },
     {
@@ -1720,7 +1927,7 @@
       "source_location": "L16",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd",
+      "target": "frontend_package_dependencies_react",
       "confidence_score": 1.0
     },
     {
@@ -1730,7 +1937,7 @@
       "source_location": "L17",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd_html5_backend",
+      "target": "frontend_package_dependencies_react_dnd",
       "confidence_score": 1.0
     },
     {
@@ -1740,7 +1947,7 @@
       "source_location": "L18",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd_multi_backend",
+      "target": "frontend_package_dependencies_react_dnd_html5_backend",
       "confidence_score": 1.0
     },
     {
@@ -1750,7 +1957,7 @@
       "source_location": "L19",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd_touch_backend",
+      "target": "frontend_package_dependencies_react_dnd_multi_backend",
       "confidence_score": 1.0
     },
     {
@@ -1760,7 +1967,7 @@
       "source_location": "L20",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dom",
+      "target": "frontend_package_dependencies_react_dnd_touch_backend",
       "confidence_score": 1.0
     },
     {
@@ -1770,27 +1977,17 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "frontend_package_dependencies",
       "target": "frontend_package_dependencies_socket_io_client",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L28",
-      "weight": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_js",
       "confidence_score": 1.0
     },
     {
@@ -1800,27 +1997,7 @@
       "source_location": "L29",
       "weight": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_plugin_react_hooks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_plugin_react_refresh",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_globals",
+      "target": "frontend_package_devdependencies_eslint",
       "confidence_score": 1.0
     },
     {
@@ -1830,17 +2007,27 @@
       "source_location": "L25",
       "weight": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_types_react",
+      "target": "frontend_package_devdependencies_eslint_js",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/package.json",
-      "source_location": "L26",
+      "source_location": "L30",
       "weight": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_types_react_dom",
+      "target": "frontend_package_devdependencies_eslint_plugin_react_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint_plugin_react_refresh",
       "confidence_score": 1.0
     },
     {
@@ -1850,7 +2037,17 @@
       "source_location": "L32",
       "weight": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_vite",
+      "target": "frontend_package_devdependencies_globals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_react",
       "confidence_score": 1.0
     },
     {
@@ -1858,6 +2055,26 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/package.json",
       "source_location": "L27",
+      "weight": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L28",
       "weight": 1.0,
       "source": "frontend_package_devdependencies",
       "target": "frontend_package_devdependencies_vitejs_plugin_react_swc",
@@ -1901,7 +2118,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_app",
       "target": "components_studentseditor",
@@ -1934,7 +2151,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "src_app",
       "target": "context_studentscontext",
@@ -1945,7 +2162,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "src_app",
       "target": "context_studentscontext_usestudents",
@@ -1955,7 +2172,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "src_app",
       "target": "src_app_app",
@@ -1966,10 +2183,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "src_app",
-      "target": "src_socket",
+      "target": "src_firebase",
       "confidence_score": 1.0
     },
     {
@@ -1977,10 +2194,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "src_app",
-      "target": "src_socket_socket",
+      "target": "src_firebase_lessonsref",
       "confidence_score": 1.0
     },
     {
@@ -2021,7 +2238,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "source": "src_app_app",
       "target": "context_studentscontext_usestudents",
@@ -2032,7 +2249,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.jsx",
-      "source_location": "L42",
+      "source_location": "L35",
       "weight": 1.0,
       "source": "src_app_app",
       "target": "utils_dateutils_formattimeslot",
@@ -2355,7 +2572,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "source": "context_studentscontext",
       "target": "context_studentscontext_studentscontext",
@@ -2365,7 +2582,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "source": "context_studentscontext",
       "target": "context_studentscontext_studentsprovider",
@@ -2375,7 +2592,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L62",
+      "source_location": "L60",
       "weight": 1.0,
       "source": "context_studentscontext",
       "target": "context_studentscontext_usestudents",
@@ -2386,10 +2603,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "source": "context_studentscontext",
-      "target": "src_socket",
+      "target": "src_firebase",
       "confidence_score": 1.0
     },
     {
@@ -2397,10 +2614,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "source": "context_studentscontext",
-      "target": "src_socket_socket",
+      "target": "src_firebase_studentsref",
       "confidence_score": 1.0
     },
     {
@@ -2428,11 +2645,51 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/socket.js",
-      "source_location": "L4",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L15",
       "weight": 1.0,
-      "source": "src_socket",
-      "target": "src_socket_socket",
+      "source": "src_firebase",
+      "target": "src_firebase_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_firebase",
+      "target": "src_firebase_db",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_firebase",
+      "target": "src_firebase_firebaseconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_firebase",
+      "target": "src_firebase_lessonsref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_firebase",
+      "target": "src_firebase_studentsref",
       "confidence_score": 1.0
     },
     {
@@ -2628,5 +2885,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d0b90a249b18eb8a4bb7de07664b135652f49556"
+  "built_at_commit": "30beb97c9f8553f77822e13d30ea636b69b35b40"
 }

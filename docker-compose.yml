@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - wwebjs_auth:/app/.wwebjs_auth
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8090:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  wwebjs_auth:

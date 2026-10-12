@@ -5,29 +5,28 @@ import ViewToggle from './components/ViewToggle';
 import DayView from './components/DayView';
 import WeekView from './components/WeekView';
 import { formatTimeSlot } from './utils/dateUtils';
-import { socket } from './socket';
+import { onSnapshot, setDoc } from 'firebase/firestore';
+import { lessonsRef } from './firebase';
 import StudentsEditor from './components/StudentsEditor';
 import { useStudents } from './context/StudentsContext';
 import './App.css';
 
 const App = () => {
-  const [viewMode, setViewMode] = useState('day');
+  const [viewMode, setViewMode] = useState(() => {
+    try { return localStorage.getItem('viewMode') || 'day'; } catch { return 'day'; }
+  });
+
+  useEffect(() => {
+    try { localStorage.setItem('viewMode', viewMode); } catch { /* storage unavailable */ }
+  }, [viewMode]);
   const [currentDate, setCurrentDate] = useState(new Date());
   const [schedule, setSchedule] = useState({});
   const [draggedStudent, setDraggedStudent] = useState(null);
   const [editorOpen, setEditorOpen] = useState(false);
   const { students } = useStudents();
 
-  // Subscribe to lessons updates via sockets
-  useEffect(() => {
-    const onList = (data) => {
-      if (data && typeof data === 'object') setSchedule(data);
-    };
-    socket.on('lessons:list', onList);
-    return () => {
-      socket.off('lessons:list', onList);
-    };
-  }, []);
+  // Subscribe to lessons updates via Firestore
+  useEffect(() => onSnapshot(lessonsRef, (snap) => setSchedule(snap.data() || {})), []);
 
   const handleDragStart = (studentName) => {
     setDraggedStudent(studentName);
@@ -42,7 +41,7 @@ const App = () => {
       const timeSlot = formatTimeSlot(date, hour);
       setSchedule(prev => {
         const next = { ...prev, [timeSlot]: draggedStudent };
-        socket.emit('lessons:set', next);
+        setDoc(lessonsRef, next).catch(console.error);
         return next;
       });
       setDraggedStudent(null);
@@ -53,7 +52,7 @@ const App = () => {
     setSchedule(prev => {
       const next = { ...prev };
       delete next[timeSlot];
-      socket.emit('lessons:set', next);
+      setDoc(lessonsRef, next).catch(console.error);
       return next;
     });
   };

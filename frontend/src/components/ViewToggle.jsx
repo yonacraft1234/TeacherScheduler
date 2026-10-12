@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronRight, ChevronLeft } from 'lucide-react';
 import './ViewToggle.css';
 
 const ViewToggle = ({ viewMode, onViewModeChange, currentDate, onDateChange }) => {
@@ -36,14 +37,14 @@ const ViewToggle = ({ viewMode, onViewModeChange, currentDate, onDateChange }) =
           </button>
         </div>
         <div className="navigation-buttons">
-          <button onClick={handlePrevious} className="nav-button">
-            הקודם
+          <button onClick={handlePrevious} className="nav-button nav-arrow" aria-label="הקודם" title="הקודם">
+            <ChevronRight size={18} />
           </button>
-          <button onClick={handleToday} className="nav-button">
+          <button onClick={handleToday} className="nav-button nav-today">
             היום
           </button>
-          <button onClick={handleNext} className="nav-button">
-            הבא
+          <button onClick={handleNext} className="nav-button nav-arrow" aria-label="הבא" title="הבא">
+            <ChevronLeft size={18} />
           </button>
         </div>
       </div>

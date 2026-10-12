@@ -18,8 +18,18 @@ const io = new Server(ioServer, {
   cors: { origin: '*' }
 });
 
+// Remove stale Chromium profile locks left by a previous container (different hostname)
+const authPath = process.env.WWEBJS_AUTH_PATH || path.join(__dirname, '.wwebjs_auth');
+for (const f of ['SingletonLock', 'SingletonSocket', 'SingletonCookie']) {
+  try { fs.rmSync(path.join(authPath, 'session', f), { force: true }); } catch { /* ignore */ }
+}
+
 const client = new Client({
-  authStrategy: new LocalAuth()
+  authStrategy: new LocalAuth({ dataPath: process.env.WWEBJS_AUTH_PATH }),
+  puppeteer: {
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  },
 });
 
 client.on('qr', (qr) => {
@@ -27,7 +37,15 @@ client.on('qr', (qr) => {
   qrcode.generate(qr, { small: true });
 });
 
+let whatsappReady = false;
+
+client.on('authenticated', () => console.log('WhatsApp authenticated'));
+client.on('auth_failure', (m) => console.error('WhatsApp auth failure:', m));
+client.on('loading_screen', (pct) => console.log(`WhatsApp loading ${pct}%`));
+client.on('disconnected', (r) => { whatsappReady = false; console.log('WhatsApp disconnected:', r); });
+
 client.on('ready', () => {
+  whatsappReady = true;
   console.log('WhatsApp client is ready');
 });
 
@@ -189,6 +207,9 @@ app.put('/api/students', async (req, res) => {
 
 app.post('/api/send-lessons', async (req, res) => {
   try {
+    if (!whatsappReady) {
+      return res.status(503).json({ ok: false, error: 'WhatsApp not connected - scan the QR in the backend logs' });
+    }
     const { lessons = [] } = req.body;
 
     const sendJobs = lessons.map(async (l) => {
@@ -204,6 +225,7 @@ app.post('/api/send-lessons', async (req, res) => {
     });
 
     const results = await Promise.allSettled(sendJobs);
+    results.filter(r => r.status === 'rejected').forEach(r => console.error('Send failed:', r.reason?.message || r.reason));
     res.json({
       ok: true,
       sent: results.filter(r => r.status === 'fulfilled').length,

@@ -1,66 +1,53 @@
 .header {
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 24px;
 }
 
 .header-container {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 
 .header-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #1f2937;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--text);
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 10px;
 }
 
 .header-title svg {
-  color: #2563eb;
+  color: var(--primary);
+  background: var(--primary-soft);
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  box-sizing: content-box;
 }
 
-.header-actions {
-  display: flex;
-  gap: 0.5rem;
-}
+.header-actions { display: flex; gap: 8px; }
 
-.send-sms-button {
-  background-color: #16a34a;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.send-sms-button:hover {
-  background-color: #15803d;
-}
-
+.send-sms-button,
 .edit-students-button {
-  background-color: #2563eb;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s;
+  gap: 8px;
+  font-weight: 600;
+  transition: background-color var(--ease), border-color var(--ease), transform var(--ease);
 }
 
-.edit-students-button:hover { 
-  background-color: #1d4ed8; 
-}
+.send-sms-button:active,
+.edit-students-button:active { transform: scale(0.97); }
+
+.send-sms-button { background: var(--success); color: #fff; box-shadow: var(--shadow-sm); }
+.send-sms-button:hover { background: var(--success-hover); }
+
+.edit-students-button { background: var(--surface); color: var(--text); border-color: var(--border); }
+.edit-students-button:hover { background: var(--surface-2); border-color: #cbd5e1; }

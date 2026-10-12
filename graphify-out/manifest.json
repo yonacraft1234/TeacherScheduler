@@ -9,19 +9,29 @@
     "ast_hash": "1bf5f010a36b3e23ba0de632d904b4ef",
     "semantic_hash": ""
   },
+  "firebase.json": {
+    "mtime": 1791814831.5000298,
+    "ast_hash": "3ba3fbcea837524f4cc47a37bdff5337",
+    "semantic_hash": ""
+  },
+  "firestore.indexes.json": {
+    "mtime": 1791814831.4990902,
+    "ast_hash": "785d3bd9ffd2cf903c81ecad28131101",
+    "semantic_hash": ""
+  },
   "frontend/eslint.config.js": {
     "mtime": 1761494739.9145122,
     "ast_hash": "ea5fa9590bc5a8caf28851562aaa0b09",
     "semantic_hash": ""
   },
   "frontend/package.json": {
-    "mtime": 1762462364.6165488,
-    "ast_hash": "ba3ec10a754f493800a27595b29bcbc8",
+    "mtime": 1791814664.902978,
+    "ast_hash": "fad4f2cd232f496af86a86d6a59ecf66",
     "semantic_hash": ""
   },
   "frontend/src/App.jsx": {
-    "mtime": 1762462475.4260845,
-    "ast_hash": "2f9733ee135ee0d2ea09156ccb5130dc",
+    "mtime": 1791814676.4762576,
+    "ast_hash": "f80e7762160106b25e0bf4f6f1a15684",
     "semantic_hash": ""
   },
   "frontend/src/components/DayView.jsx": {
@@ -55,18 +65,18 @@
     "semantic_hash": ""
   },
   "frontend/src/context/StudentsContext.jsx": {
-    "mtime": 1761512942.3732302,
-    "ast_hash": "3fe8bf030110ec9347c29e17ab691575",
+    "mtime": 1791814676.474755,
+    "ast_hash": "5f711fc70bf5dc64a7db3a31ef5612bd",
+    "semantic_hash": ""
+  },
+  "frontend/src/firebase.js": {
+    "mtime": 1791814665.241595,
+    "ast_hash": "4138231c1d8a8b827fb4839593d2db51",
     "semantic_hash": ""
   },
   "frontend/src/main.jsx": {
     "mtime": 1761504694.332166,
     "ast_hash": "1f9e125e2f7128f80397263d9467c7cb",
-    "semantic_hash": ""
-  },
-  "frontend/src/socket.js": {
-    "mtime": 1761512909.7027192,
-    "ast_hash": "dbe60b0b7c9e55dda2c9f75dab88bf32",
     "semantic_hash": ""
   },
   "frontend/src/utils/constants.js": {

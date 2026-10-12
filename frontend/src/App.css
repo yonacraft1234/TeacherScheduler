@@ -1,32 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  height: 100vh;
-  width: 100vw;
-}
-
 .app {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f9fafb;
+  background: var(--bg);
 }
 
 .app-content {
   display: flex;
   flex: 1;
+  gap: 16px;
+  padding: 16px;
   overflow: hidden;
 }
 
@@ -35,4 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
 }

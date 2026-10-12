@@ -26,6 +26,7 @@ const DayView = ({ currentDate, schedule, fixedSlots, onDragOver, onDrop, onRemo
             <div
               key={hour}
               className="time-slot"
+              data-drop-slot={timeSlot}
               onDragOver={onDragOver}
               onDrop={() => onDrop(currentDate, hour)}
             >

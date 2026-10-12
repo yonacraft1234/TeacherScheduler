@@ -1,14 +1,21 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useStudents } from '../context/StudentsContext';
 import './Sidebar.css';
 
-const Sidebar = ({ onDragStart, onDragEnd }) => {
+const LONG_PRESS_MS = 350;
+const MOVE_TOLERANCE_PX = 10;
+
+const Sidebar = ({ onDragStart, onTouchDrop, onStudentClick }) => {
   const { students } = useStudents();
-  const dragItemRef = useRef(null);
+  const touchRef = useRef(null);
+  const suppressClickRef = useRef(false);
+  const [ghost, setGhost] = useState(null); // { name, x, y } while touch-dragging
   const isCoarsePointer =
     typeof window !== 'undefined' &&
     window.matchMedia &&
     window.matchMedia('(pointer: coarse)').matches;
+
+  useEffect(() => () => clearTimeout(touchRef.current?.timer), []);
 
   // --- Mouse / Desktop ---
   const handleMouseDragStart = (name, e) => {
@@ -17,35 +24,61 @@ const Sidebar = ({ onDragStart, onDragEnd }) => {
     if (onDragStart) onDragStart(name);
   };
 
-  // --- Touch / iOS ---
+  // Quick tap / click opens the "new lesson" dialog
+  const handleClick = (name) => {
+    if (suppressClickRef.current) {
+      suppressClickRef.current = false;
+      return;
+    }
+    onStudentClick(name);
+  };
+
+  // --- Touch: long press starts a drag, quick tap falls through to click ---
+  const setDropHighlight = (el) => {
+    const t = touchRef.current;
+    if (t.target === el) return;
+    t.target?.classList.remove('touch-drop-target');
+    el?.classList.add('touch-drop-target');
+    t.target = el;
+  };
+
   const handleTouchStart = (name, e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    dragItemRef.current = {
-      name,
-      startX: e.touches[0].clientX,
-      startY: e.touches[0].clientY,
-    };
-    if (onDragStart) onDragStart(name);
+    const { clientX, clientY } = e.touches[0];
+    const timer = setTimeout(() => {
+      touchRef.current.dragging = true;
+      suppressClickRef.current = true;
+      navigator.vibrate?.(20);
+      setGhost({ name, x: clientX, y: clientY });
+    }, LONG_PRESS_MS);
+    touchRef.current = { name, startX: clientX, startY: clientY, timer, dragging: false, target: null };
   };
 
   const handleTouchMove = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    const touch = e.touches[0];
-    const dragItem = dragItemRef.current;
-    if (!dragItem) return;
-    // You can add visual feedback here if needed
+    const t = touchRef.current;
+    if (!t) return;
+    const { clientX, clientY } = e.touches[0];
+    if (!t.dragging) {
+      if (Math.hypot(clientX - t.startX, clientY - t.startY) > MOVE_TOLERANCE_PX) {
+        clearTimeout(t.timer);
+        touchRef.current = null;
+      }
+      return;
+    }
+    setGhost({ name: t.name, x: clientX, y: clientY });
+    setDropHighlight(document.elementFromPoint(clientX, clientY)?.closest('[data-drop-slot]') || null);
   };
 
-  const handleTouchEnd = (e) => {
-    e.preventDefault();    // suppress synthetic click
-    e.stopPropagation();
-    const dragItem = dragItemRef.current;
-    if (!dragItem) return;
-
-    dragItemRef.current = null;
-    if (onDragEnd) onDragEnd(dragItem.name);
+  const endTouch = (drop) => {
+    const t = touchRef.current;
+    if (!t) return;
+    clearTimeout(t.timer);
+    if (t.dragging) {
+      const slot = t.target?.dataset.dropSlot;
+      setDropHighlight(null);
+      if (drop && slot) onTouchDrop(t.name, slot);
+      setGhost(null);
+    }
+    touchRef.current = null;
   };
 
   return (
@@ -55,19 +88,30 @@ const Sidebar = ({ onDragStart, onDragEnd }) => {
         {Object.entries(students).map(([name, phone]) => (
           <div
             key={name}
-            draggable={true}  // enable native drag only for mouse/trackpad
+            draggable={!isCoarsePointer} // native drag for mouse/trackpad only
             onDragStart={(e) => handleMouseDragStart(name, e)}
-            onDragEnd={() => onDragEnd && onDragEnd(name)}
+            onClick={() => handleClick(name)}
             onTouchStart={(e) => handleTouchStart(name, e)}
             onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-            className="student-card"
+            onTouchEnd={() => endTouch(true)}
+            onTouchCancel={() => endTouch(false)}
+            onContextMenu={(e) => e.preventDefault()}
+            className={`student-card${ghost?.name === name ? ' dragging' : ''}`}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), onStudentClick(name))}
           >
             <div className="student-name">{name}</div>
             <div className="student-phone">{phone}</div>
           </div>
         ))}
       </div>
+
+      {ghost && (
+        <div className="student-drag-ghost" style={{ left: ghost.x, top: ghost.y }}>
+          {ghost.name}
+        </div>
+      )}
     </div>
   );
 };

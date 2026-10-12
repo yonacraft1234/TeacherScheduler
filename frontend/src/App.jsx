@@ -4,10 +4,12 @@ import Sidebar from './components/Sidebar';
 import ViewToggle from './components/ViewToggle';
 import DayView from './components/DayView';
 import WeekView from './components/WeekView';
-import { formatTimeSlot, formatDate, getWeekDates, getSlotWeekday } from './utils/dateUtils';
+import { formatTimeSlot, formatDate, formatHourDisplay, getWeekDates, getSlotWeekday } from './utils/dateUtils';
+import { HOURS } from './utils/constants';
 import { onSnapshot, setDoc } from 'firebase/firestore';
 import { lessonsRef, skipsRef } from './firebase';
 import StudentsEditor from './components/StudentsEditor';
+import AddLessonDialog from './components/AddLessonDialog';
 import { useStudents } from './context/StudentsContext';
 import './App.css';
 
@@ -24,7 +26,8 @@ const App = () => {
   const [skips, setSkips] = useState({});
   const [draggedStudent, setDraggedStudent] = useState(null);
   const [editorOpen, setEditorOpen] = useState(false);
-  const { students, recurring } = useStudents();
+  const [lessonStudent, setLessonStudent] = useState(null);
+  const { students, recurring, addFixed } = useStudents();
 
   // Subscribe to lessons / removed fixed occurrences via Firestore
   useEffect(() => onSnapshot(lessonsRef, (snap) => setLessons(snap.data() || {})), []);
@@ -53,16 +56,44 @@ const App = () => {
     e.preventDefault();
   };
 
+  const addLessons = (slots) => {
+    setLessons(prev => {
+      const next = { ...prev, ...slots };
+      setDoc(lessonsRef, next).catch(console.error);
+      return next;
+    });
+  };
+
   const handleDrop = (date, hour) => {
     if (draggedStudent) {
-      const timeSlot = formatTimeSlot(date, hour);
-      setLessons(prev => {
-        const next = { ...prev, [timeSlot]: draggedStudent };
-        setDoc(lessonsRef, next).catch(console.error);
-        return next;
-      });
+      addLessons({ [formatTimeSlot(date, hour)]: draggedStudent });
       setDraggedStudent(null);
     }
+  };
+
+  const handleTouchDrop = (name, timeSlot) => addLessons({ [timeSlot]: name });
+
+  // Who is booked at a slot on any date: one-off lesson first, then a fixed lesson not removed that week
+  const occupantAt = (timeSlot) => {
+    if (lessons[timeSlot]) return lessons[timeSlot];
+    const time = timeSlot.split('-').slice(-1)[0];
+    const fixedName = recurring[`${getSlotWeekday(timeSlot)}-${time}`];
+    return fixedName && !skips[timeSlot] ? fixedName : null;
+  };
+
+  const handleAddLesson = async ({ name, date, from, to, fixed }) => {
+    if (fixed) return addFixed(name, date.getDay(), from, to);
+    const slots = {};
+    for (const hour of HOURS.filter(h => h >= from && h < to)) {
+      const timeSlot = formatTimeSlot(date, hour);
+      const occupant = occupantAt(timeSlot);
+      if (occupant && occupant !== name) {
+        return { ok: false, error: `${formatHourDisplay(hour)} כבר תפוס ע"י ${occupant}` };
+      }
+      slots[timeSlot] = name;
+    }
+    addLessons(slots);
+    return { ok: true };
   };
 
   const removeFromSchedule = (timeSlot) => {
@@ -144,7 +175,7 @@ const App = () => {
       <Header onSendSMS={handleSendSMS} onOpenStudentsEditor={() => setEditorOpen(true)} />
 
       <div className="app-content">
-        <Sidebar onDragStart={handleDragStart} />
+        <Sidebar onDragStart={handleDragStart} onTouchDrop={handleTouchDrop} onStudentClick={setLessonStudent} />
 
         <div className="calendar-section">
           <ViewToggle
@@ -177,6 +208,15 @@ const App = () => {
       </div>
 
       <StudentsEditor open={editorOpen} onClose={() => setEditorOpen(false)} />
+      {lessonStudent && (
+        <AddLessonDialog
+          key={lessonStudent}
+          student={lessonStudent}
+          defaultDate={currentDate}
+          onSave={handleAddLesson}
+          onClose={() => setLessonStudent(null)}
+        />
+      )}
     </div>
   );
 };

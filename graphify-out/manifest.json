@@ -30,13 +30,13 @@
     "semantic_hash": ""
   },
   "frontend/src/App.jsx": {
-    "mtime": 1791823423.2748122,
-    "ast_hash": "adc27a892b017e6e1e5895a26f49e8d9",
+    "mtime": 1791824567.359095,
+    "ast_hash": "190eb5728bf0775311f7efdf5cc26c73",
     "semantic_hash": ""
   },
   "frontend/src/components/DayView.jsx": {
-    "mtime": 1791823437.7793977,
-    "ast_hash": "2fbf7431ce51fa2fd74444d10336e6e4",
+    "mtime": 1791824523.311668,
+    "ast_hash": "f2c6b686821d6342ec2df7208d401c93",
     "semantic_hash": ""
   },
   "frontend/src/components/Header.jsx": {
@@ -45,13 +45,13 @@
     "semantic_hash": ""
   },
   "frontend/src/components/Sidebar.jsx": {
-    "mtime": 1762465080.5224123,
-    "ast_hash": "c0d9bc95aa124ff46c15cfffac4d1c27",
+    "mtime": 1791824536.8543646,
+    "ast_hash": "00524a025df14473736d3b79e5783ba5",
     "semantic_hash": ""
   },
   "frontend/src/components/StudentsEditor.jsx": {
-    "mtime": 1791824045.9803483,
-    "ast_hash": "ad710678c47a30bb81ac6c1806d80724",
+    "mtime": 1791824652.707893,
+    "ast_hash": "3415c5d7903e33c782685671e75de8df",
     "semantic_hash": ""
   },
   "frontend/src/components/ViewToggle.jsx": {
@@ -60,13 +60,13 @@
     "semantic_hash": ""
   },
   "frontend/src/components/WeekView.jsx": {
-    "mtime": 1791823437.7803988,
-    "ast_hash": "82dcfa86f3685c9aa41ed32aabdcb531",
+    "mtime": 1791824523.311668,
+    "ast_hash": "cc04d61f4e933767b9ff0d2e0d50fa66",
     "semantic_hash": ""
   },
   "frontend/src/context/StudentsContext.jsx": {
-    "mtime": 1791823409.0348055,
-    "ast_hash": "20d0b3f943354e0553384fc36cfb1e0b",
+    "mtime": 1791824652.708896,
+    "ast_hash": "35d064efe9a39978db184067a5290061",
     "semantic_hash": ""
   },
   "frontend/src/firebase.js": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "frontend/src/utils/constants.js": {
-    "mtime": 1761507019.884508,
-    "ast_hash": "603414c6a7270c4308456f526417b0e2",
+    "mtime": 1791824523.3106635,
+    "ast_hash": "c030506a0e83ff5e32e8c009cbec65e0",
     "semantic_hash": ""
   },
   "frontend/src/utils/dateUtils.js": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1791815160.5341747,
-    "ast_hash": "3b1a2597686a65ef7c68facb6d31709f",
+    "mtime": 1791824683.9343402,
+    "ast_hash": "96175d0176dc35be2f5a692ffaf01954",
     "semantic_hash": ""
   },
   "frontend/README.md": {
@@ -112,6 +112,16 @@
   "docker-compose.yml": {
     "mtime": 1791815130.1631637,
     "ast_hash": "4f737e9d92eb76ff101dc76fae9b41a6",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/AddLessonDialog.jsx": {
+    "mtime": 1791824550.536032,
+    "ast_hash": "99a75f22ecb301b07931c78fcc097bc1",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy.yml": {
+    "mtime": 1791824667.3933437,
+    "ast_hash": "a3414cbc258590b4c98d4cbaa9b1ff35",
     "semantic_hash": ""
   }
 }

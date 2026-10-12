@@ -13,7 +13,9 @@ A scheduling tool for private teachers — drag-and-drop weekly/daily calendar w
 
 ## Features
 
-- Drag students onto time slots in day or week view
+- Drag students onto time slots in day or week view (long-press to drag on touch screens)
+- Tap/click a student to add a lesson by date and time range
+- Fixed weekly lessons: same day and hours every week; removing one from the table cancels only that week
 - Live multi-client sync via Firestore
 - Send WhatsApp lesson reminders to all students in one click
 - Student management (add / delete / import JSON)
@@ -41,6 +43,19 @@ cd frontend && npm install && npm run dev      # http://localhost:5173
 ## Firebase
 
 - Project: `teacherscheduler-8b645`; config is in `frontend/src/firebase.js`.
-- Data lives in two Firestore documents: `data/students` (`{ name: phone }`) and `data/lessons` (`{ "YYYY-MM-DD-HH:MM": name }`).
+- Data lives in Firestore documents: `data/students` (`{ name: phone }`), `data/lessons` (`{ "YYYY-MM-DD-HH:MM": name }`), `data/recurring` (fixed weekly lessons, `{ "<weekday 0-6>-HH:MM": name }`) and `data/skips` (single fixed-lesson weeks removed, `{ "YYYY-MM-DD-HH:MM": true }`).
 - Security rules are in `firestore.rules`. Deploy them with `firebase deploy --only firestore`.
-- The rules are open, with no login required. Anyone who has the config can read and write these two documents.
+- The rules are open, with no login required. Anyone who has the config can read and write these documents.
+
+## CI/CD
+
+`.github/workflows/deploy.yml` deploys to the VPS over SSH on every push to `master`. It clones the repo to `/home/TeacherScheduler` on the first run, then runs `git pull` and `docker compose up -d --build`. The frontend is built inside its Docker image. If the build fails, the running containers are left as they were.
+
+Required repository secrets:
+
+| Secret | Value |
+|---|---|
+| `VPS_HOST` | VPS IP or hostname |
+| `VPS_SSH_KEY` | Private SSH key for `root` on the VPS |
+
+The VPS needs Docker with the Compose plugin. After the first deploy, scan the WhatsApp QR code from `docker compose logs -f backend` on the VPS. Firestore rules are not deployed by the pipeline.

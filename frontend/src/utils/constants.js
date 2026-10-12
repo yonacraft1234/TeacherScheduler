@@ -7,6 +7,9 @@ for (let i = 8; i <= 23; i++) {
   }
 }
 
+// Lesson end times: every slot's end (last slot ends at 23:30)
+export const END_HOURS = [...HOURS.slice(1), HOURS[HOURS.length - 1] + 0.5];
+
 // Days of the week
 export const DAYS_OF_WEEK = [
   'ראשון',

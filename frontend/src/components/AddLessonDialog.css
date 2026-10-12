@@ -1,0 +1,12 @@
+.al-modal { width: 400px; }
+.al-body { display: flex; flex-direction: column; gap: 14px; }
+
+.al-field { display: flex; flex-direction: column; gap: 6px; font-size: 0.875rem; font-weight: 500; color: var(--text-2); }
+.al-times { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.al-check { display: flex; align-items: center; gap: 8px; font-weight: 500; color: var(--text); cursor: pointer; }
+.al-check input { width: 18px; height: 18px; accent-color: var(--primary); }
+
+.al-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.al-actions .se-export { width: auto; padding: 0 14px; }
+.al-actions .se-add-btn { min-height: 34px; }

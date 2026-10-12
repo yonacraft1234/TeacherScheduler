@@ -33,6 +33,7 @@ const WeekView = ({ currentDate, schedule, fixedSlots, onDragOver, onDrop, onRem
                 <div
                   key={i}
                   className="week-slot-cell"
+                  data-drop-slot={timeSlot}
                   onDragOver={onDragOver}
                   onDrop={() => onDrop(date, hour)}
                 >

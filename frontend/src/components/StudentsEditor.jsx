@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { X, Plus, Repeat, Download, Upload } from 'lucide-react';
 import './StudentsEditor.css';
 import { useStudents } from '../context/StudentsContext';
-import { HOURS, DAYS_OF_WEEK } from '../utils/constants';
+import { HOURS, END_HOURS, DAYS_OF_WEEK } from '../utils/constants';
 import { formatHourDisplay } from '../utils/dateUtils';
-
-const END_HOURS = [...HOURS.slice(1), HOURS[HOURS.length - 1] + 0.5];
 
 const toHour = (time) => {
   const [h, m] = time.split(':').map(Number);
@@ -111,7 +109,9 @@ const StudentsEditor = ({ open, onClose }) => {
                       if (!res?.ok) setError(res?.error || 'שגיאה בשמירה');
                       else setError('');
                     }
-                  } catch {}
+                  } catch {
+                    setError('קובץ JSON לא תקין');
+                  }
                 }}
                 style={{ display: 'none' }}
               />

@@ -56,3 +56,21 @@
   font-variant-numeric: tabular-nums;
   direction: ltr;
 }
+
+.student-card.dragging { opacity: 0.5; }
+
+.student-drag-ghost {
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  transform: translate(-50%, -120%);
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  white-space: nowrap;
+}
+
+.touch-drop-target { outline: 2px solid var(--primary); outline-offset: -2px; background: var(--primary-soft); }

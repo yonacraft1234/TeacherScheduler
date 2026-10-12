@@ -95,6 +95,7 @@ export const StudentsProvider = ({ children }) => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components -- hook lives next to its provider
 export const useStudents = () => {
   const ctx = useContext(StudentsContext);
   if (!ctx) throw new Error('useStudents must be used within StudentsProvider');

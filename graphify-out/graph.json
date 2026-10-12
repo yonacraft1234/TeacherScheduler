@@ -124,7 +124,7 @@
       "label": "client",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L21",
+      "source_location": "L27",
       "id": "backend_index_client",
       "community": 0,
       "norm_label": "client"
@@ -133,7 +133,7 @@
       "label": "toWhatsAppId()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L37",
+      "source_location": "L55",
       "id": "backend_index_towhatsappid",
       "community": 0,
       "norm_label": "towhatsappid()"
@@ -142,7 +142,7 @@
       "label": "formatDateHe()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L48",
+      "source_location": "L66",
       "id": "backend_index_formatdatehe",
       "community": 0,
       "norm_label": "formatdatehe()"
@@ -151,7 +151,7 @@
       "label": "DATA_DIR",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L58",
+      "source_location": "L76",
       "id": "backend_index_data_dir",
       "community": 0,
       "norm_label": "data_dir"
@@ -160,7 +160,7 @@
       "label": "STUDENTS_PATH",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L59",
+      "source_location": "L77",
       "id": "backend_index_students_path",
       "community": 0,
       "norm_label": "students_path"
@@ -169,7 +169,7 @@
       "label": "LESSONS_PATH",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L60",
+      "source_location": "L78",
       "id": "backend_index_lessons_path",
       "community": 0,
       "norm_label": "lessons_path"
@@ -178,7 +178,7 @@
       "label": "ensureDataFile()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L63",
+      "source_location": "L81",
       "id": "backend_index_ensuredatafile",
       "community": 0,
       "norm_label": "ensuredatafile()"
@@ -187,7 +187,7 @@
       "label": "readStudents()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L83",
+      "source_location": "L101",
       "id": "backend_index_readstudents",
       "community": 0,
       "norm_label": "readstudents()"
@@ -196,7 +196,7 @@
       "label": "writeStudents()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L91",
+      "source_location": "L109",
       "id": "backend_index_writestudents",
       "community": 0,
       "norm_label": "writestudents()"
@@ -205,7 +205,7 @@
       "label": "readLessons()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L96",
+      "source_location": "L114",
       "id": "backend_index_readlessons",
       "community": 0,
       "norm_label": "readlessons()"
@@ -214,7 +214,7 @@
       "label": "writeLessons()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L104",
+      "source_location": "L122",
       "id": "backend_index_writelessons",
       "community": 0,
       "norm_label": "writelessons()"
@@ -223,7 +223,7 @@
       "label": "atomicWrite()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L110",
+      "source_location": "L128",
       "id": "backend_index_atomicwrite",
       "community": 0,
       "norm_label": "atomicwrite()"
@@ -232,7 +232,7 @@
       "label": "normalizeName()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L116",
+      "source_location": "L134",
       "id": "backend_index_normalizename",
       "community": 0,
       "norm_label": "normalizename()"
@@ -241,7 +241,7 @@
       "label": "normalizePhone()",
       "file_type": "code",
       "source_file": "backend/index.js",
-      "source_location": "L120",
+      "source_location": "L138",
       "id": "backend_index_normalizephone",
       "community": 0,
       "norm_label": "normalizephone()"
@@ -684,7 +684,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L24",
       "id": "frontend_package_devdependencies",
-      "community": 6,
+      "community": 5,
       "norm_label": "devdependencies"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L25",
       "id": "frontend_package_devdependencies_eslint_js",
-      "community": 6,
+      "community": 5,
       "norm_label": "@eslint/js"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L26",
       "id": "frontend_package_devdependencies_types_react",
-      "community": 6,
+      "community": 5,
       "norm_label": "@types/react"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L27",
       "id": "frontend_package_devdependencies_types_react_dom",
-      "community": 6,
+      "community": 5,
       "norm_label": "@types/react-dom"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L28",
       "id": "frontend_package_devdependencies_vitejs_plugin_react_swc",
-      "community": 6,
+      "community": 5,
       "norm_label": "@vitejs/plugin-react-swc"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L29",
       "id": "frontend_package_devdependencies_eslint",
-      "community": 6,
+      "community": 5,
       "norm_label": "eslint"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L30",
       "id": "frontend_package_devdependencies_eslint_plugin_react_hooks",
-      "community": 6,
+      "community": 5,
       "norm_label": "eslint-plugin-react-hooks"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L31",
       "id": "frontend_package_devdependencies_eslint_plugin_react_refresh",
-      "community": 6,
+      "community": 5,
       "norm_label": "eslint-plugin-react-refresh"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L32",
       "id": "frontend_package_devdependencies_globals",
-      "community": 6,
+      "community": 5,
       "norm_label": "globals"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "frontend/package.json",
       "source_location": "L33",
       "id": "frontend_package_devdependencies_vite",
-      "community": 6,
+      "community": 5,
       "norm_label": "vite"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L1",
       "id": "src_app",
-      "community": 1,
+      "community": 4,
       "norm_label": "app.jsx"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L14",
       "id": "src_app_app",
-      "community": 1,
+      "community": 4,
       "norm_label": "app()"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "frontend/src/components/Header.jsx",
       "source_location": "L1",
       "id": "components_header",
-      "community": 1,
+      "community": 4,
       "norm_label": "header.jsx"
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "frontend/src/components/Header.jsx",
       "source_location": "L5",
       "id": "components_header_header",
-      "community": 1,
+      "community": 4,
       "norm_label": "header()"
     },
     {
@@ -850,10 +850,37 @@
       "norm_label": "studentseditor.jsx"
     },
     {
+      "label": "END_HOURS",
+      "file_type": "code",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L8",
+      "id": "components_studentseditor_end_hours",
+      "community": 1,
+      "norm_label": "end_hours"
+    },
+    {
+      "label": "toHour()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L10",
+      "id": "components_studentseditor_tohour",
+      "community": 1,
+      "norm_label": "tohour()"
+    },
+    {
+      "label": "groupFixed()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L16",
+      "id": "components_studentseditor_groupfixed",
+      "community": 1,
+      "norm_label": "groupfixed()"
+    },
+    {
       "label": "StudentsEditor()",
       "file_type": "code",
       "source_file": "frontend/src/components/StudentsEditor.jsx",
-      "source_location": "L6",
+      "source_location": "L37",
       "id": "components_studentseditor_studentseditor",
       "community": 1,
       "norm_label": "studentseditor()"
@@ -864,16 +891,16 @@
       "source_file": "frontend/src/components/ViewToggle.jsx",
       "source_location": "L1",
       "id": "components_viewtoggle",
-      "community": 1,
+      "community": 4,
       "norm_label": "viewtoggle.jsx"
     },
     {
       "label": "ViewToggle()",
       "file_type": "code",
       "source_file": "frontend/src/components/ViewToggle.jsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "components_viewtoggle_viewtoggle",
-      "community": 1,
+      "community": 4,
       "norm_label": "viewtoggle()"
     },
     {
@@ -889,7 +916,7 @@
       "label": "WeekView()",
       "file_type": "code",
       "source_file": "frontend/src/components/WeekView.jsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "components_weekview_weekview",
       "community": 4,
       "norm_label": "weekview()"
@@ -907,7 +934,7 @@
       "label": "StudentsContext",
       "file_type": "code",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "id": "context_studentscontext_studentscontext",
       "community": 1,
       "norm_label": "studentscontext"
@@ -916,7 +943,7 @@
       "label": "StudentsProvider()",
       "file_type": "code",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L7",
+      "source_location": "L9",
       "id": "context_studentscontext_studentsprovider",
       "community": 1,
       "norm_label": "studentsprovider()"
@@ -925,7 +952,7 @@
       "label": "useStudents()",
       "file_type": "code",
       "source_file": "frontend/src/context/StudentsContext.jsx",
-      "source_location": "L60",
+      "source_location": "L98",
       "id": "context_studentscontext_usestudents",
       "community": 1,
       "norm_label": "usestudents()"
@@ -970,7 +997,7 @@
       "label": "studentsRef",
       "file_type": "code",
       "source_file": "frontend/src/firebase.js",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "src_firebase_studentsref",
       "community": 1,
       "norm_label": "studentsref"
@@ -979,10 +1006,28 @@
       "label": "lessonsRef",
       "file_type": "code",
       "source_file": "frontend/src/firebase.js",
-      "source_location": "L21",
+      "source_location": "L23",
       "id": "src_firebase_lessonsref",
       "community": 1,
       "norm_label": "lessonsref"
+    },
+    {
+      "label": "recurringRef",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L24",
+      "id": "src_firebase_recurringref",
+      "community": 1,
+      "norm_label": "recurringref"
+    },
+    {
+      "label": "skipsRef",
+      "file_type": "code",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L25",
+      "id": "src_firebase_skipsref",
+      "community": 1,
+      "norm_label": "skipsref"
     },
     {
       "label": "main.jsx",
@@ -1048,10 +1093,19 @@
       "norm_label": "formatdate()"
     },
     {
+      "label": "getSlotWeekday()",
+      "file_type": "code",
+      "source_file": "frontend/src/utils/dateUtils.js",
+      "source_location": "L31",
+      "id": "utils_dateutils_getslotweekday",
+      "community": 4,
+      "norm_label": "getslotweekday()"
+    },
+    {
       "label": "formatTimeSlot()",
       "file_type": "code",
       "source_file": "frontend/src/utils/dateUtils.js",
-      "source_location": "L30",
+      "source_location": "L42",
       "id": "utils_dateutils_formattimeslot",
       "community": 4,
       "norm_label": "formattimeslot()"
@@ -1060,16 +1114,16 @@
       "label": "formatHourDisplay()",
       "file_type": "code",
       "source_file": "frontend/src/utils/dateUtils.js",
-      "source_location": "L41",
+      "source_location": "L53",
       "id": "utils_dateutils_formathourdisplay",
-      "community": 4,
+      "community": 1,
       "norm_label": "formathourdisplay()"
     },
     {
       "label": "formatHourRange()",
       "file_type": "code",
       "source_file": "frontend/src/utils/dateUtils.js",
-      "source_location": "L52",
+      "source_location": "L64",
       "id": "utils_dateutils_formathourrange",
       "community": 4,
       "norm_label": "formathourrange()"
@@ -1114,55 +1168,37 @@
       "label": "Features",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "readme_features",
       "community": 7,
       "norm_label": "features"
     },
     {
-      "label": "Getting Started",
+      "label": "Run with Docker (recommended)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L21",
-      "id": "readme_getting_started",
+      "id": "readme_run_with_docker_recommended",
       "community": 7,
-      "norm_label": "getting started"
+      "norm_label": "run with docker (recommended)"
     },
     {
-      "label": "Prerequisites",
+      "label": "Run locally (development)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L23",
-      "id": "readme_prerequisites",
+      "source_location": "L32",
+      "id": "readme_run_locally_development",
       "community": 7,
-      "norm_label": "prerequisites"
+      "norm_label": "run locally (development)"
     },
     {
-      "label": "Backend",
+      "label": "Firebase",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L28",
-      "id": "readme_backend",
+      "source_location": "L41",
+      "id": "readme_firebase",
       "community": 7,
-      "norm_label": "backend"
-    },
-    {
-      "label": "Frontend",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L42",
-      "id": "readme_frontend",
-      "community": 7,
-      "norm_label": "frontend"
-    },
-    {
-      "label": "Data",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L52",
-      "id": "readme_data",
-      "community": 7,
-      "norm_label": "data"
+      "norm_label": "firebase"
     },
     {
       "label": "README.md",
@@ -1199,6 +1235,51 @@
       "id": "frontend_readme_expanding_the_eslint_configuration",
       "community": 8,
       "norm_label": "expanding the eslint configuration"
+    },
+    {
+      "label": "Getting Started",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "community": 7,
+      "norm_label": "getting started",
+      "id": "readme_getting_started"
+    },
+    {
+      "label": "Prerequisites",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "community": 7,
+      "norm_label": "prerequisites",
+      "id": "readme_prerequisites"
+    },
+    {
+      "label": "Backend",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "community": 7,
+      "norm_label": "backend",
+      "id": "readme_backend"
+    },
+    {
+      "label": "Frontend",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "community": 7,
+      "norm_label": "frontend",
+      "id": "readme_frontend"
+    },
+    {
+      "label": "Data",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L52",
+      "community": 7,
+      "norm_label": "data",
+      "id": "readme_data"
     }
   ],
   "links": [
@@ -1208,9 +1289,9 @@
       "source_file": "backend/index.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_app",
-      "confidence_score": 1.0
+      "target": "backend_index_app"
     },
     {
       "relation": "contains",
@@ -1218,9 +1299,9 @@
       "source_file": "backend/index.js",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_atomicwrite",
-      "confidence_score": 1.0
+      "target": "backend_index_atomicwrite"
     },
     {
       "relation": "contains",
@@ -1228,9 +1309,9 @@
       "source_file": "backend/index.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_client",
-      "confidence_score": 1.0
+      "target": "backend_index_client"
     },
     {
       "relation": "contains",
@@ -1238,9 +1319,9 @@
       "source_file": "backend/index.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_client_localauth",
-      "confidence_score": 1.0
+      "target": "backend_index_client_localauth"
     },
     {
       "relation": "contains",
@@ -1248,9 +1329,9 @@
       "source_file": "backend/index.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_cors",
-      "confidence_score": 1.0
+      "target": "backend_index_cors"
     },
     {
       "relation": "contains",
@@ -1258,9 +1339,9 @@
       "source_file": "backend/index.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_data_dir",
-      "confidence_score": 1.0
+      "target": "backend_index_data_dir"
     },
     {
       "relation": "contains",
@@ -1268,9 +1349,9 @@
       "source_file": "backend/index.js",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_ensuredatafile",
-      "confidence_score": 1.0
+      "target": "backend_index_ensuredatafile"
     },
     {
       "relation": "contains",
@@ -1278,9 +1359,9 @@
       "source_file": "backend/index.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_express",
-      "confidence_score": 1.0
+      "target": "backend_index_express"
     },
     {
       "relation": "contains",
@@ -1288,9 +1369,9 @@
       "source_file": "backend/index.js",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_formatdatehe",
-      "confidence_score": 1.0
+      "target": "backend_index_formatdatehe"
     },
     {
       "relation": "contains",
@@ -1298,9 +1379,9 @@
       "source_file": "backend/index.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_fs",
-      "confidence_score": 1.0
+      "target": "backend_index_fs"
     },
     {
       "relation": "contains",
@@ -1308,9 +1389,9 @@
       "source_file": "backend/index.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_fsp",
-      "confidence_score": 1.0
+      "target": "backend_index_fsp"
     },
     {
       "relation": "contains",
@@ -1318,9 +1399,9 @@
       "source_file": "backend/index.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_http",
-      "confidence_score": 1.0
+      "target": "backend_index_http"
     },
     {
       "relation": "contains",
@@ -1328,9 +1409,9 @@
       "source_file": "backend/index.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_io",
-      "confidence_score": 1.0
+      "target": "backend_index_io"
     },
     {
       "relation": "contains",
@@ -1338,9 +1419,9 @@
       "source_file": "backend/index.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_ioserver",
-      "confidence_score": 1.0
+      "target": "backend_index_ioserver"
     },
     {
       "relation": "contains",
@@ -1348,9 +1429,9 @@
       "source_file": "backend/index.js",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_lessons_path",
-      "confidence_score": 1.0
+      "target": "backend_index_lessons_path"
     },
     {
       "relation": "contains",
@@ -1358,9 +1439,9 @@
       "source_file": "backend/index.js",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_normalizename",
-      "confidence_score": 1.0
+      "target": "backend_index_normalizename"
     },
     {
       "relation": "contains",
@@ -1368,9 +1449,9 @@
       "source_file": "backend/index.js",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_normalizephone",
-      "confidence_score": 1.0
+      "target": "backend_index_normalizephone"
     },
     {
       "relation": "contains",
@@ -1378,9 +1459,9 @@
       "source_file": "backend/index.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_path",
-      "confidence_score": 1.0
+      "target": "backend_index_path"
     },
     {
       "relation": "contains",
@@ -1388,9 +1469,9 @@
       "source_file": "backend/index.js",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_qrcode",
-      "confidence_score": 1.0
+      "target": "backend_index_qrcode"
     },
     {
       "relation": "contains",
@@ -1398,9 +1479,9 @@
       "source_file": "backend/index.js",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_readlessons",
-      "confidence_score": 1.0
+      "target": "backend_index_readlessons"
     },
     {
       "relation": "contains",
@@ -1408,9 +1489,9 @@
       "source_file": "backend/index.js",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_readstudents",
-      "confidence_score": 1.0
+      "target": "backend_index_readstudents"
     },
     {
       "relation": "contains",
@@ -1418,9 +1499,9 @@
       "source_file": "backend/index.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_server",
-      "confidence_score": 1.0
+      "target": "backend_index_server"
     },
     {
       "relation": "contains",
@@ -1428,9 +1509,9 @@
       "source_file": "backend/index.js",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_students_path",
-      "confidence_score": 1.0
+      "target": "backend_index_students_path"
     },
     {
       "relation": "contains",
@@ -1438,9 +1519,9 @@
       "source_file": "backend/index.js",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_towhatsappid",
-      "confidence_score": 1.0
+      "target": "backend_index_towhatsappid"
     },
     {
       "relation": "contains",
@@ -1448,9 +1529,9 @@
       "source_file": "backend/index.js",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_writelessons",
-      "confidence_score": 1.0
+      "target": "backend_index_writelessons"
     },
     {
       "relation": "contains",
@@ -1458,9 +1539,9 @@
       "source_file": "backend/index.js",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index",
-      "target": "backend_index_writestudents",
-      "confidence_score": 1.0
+      "target": "backend_index_writestudents"
     },
     {
       "relation": "calls",
@@ -1469,9 +1550,9 @@
       "source_file": "backend/index.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index_ensuredatafile",
-      "target": "backend_index_atomicwrite",
-      "confidence_score": 1.0
+      "target": "backend_index_atomicwrite"
     },
     {
       "relation": "calls",
@@ -1480,9 +1561,9 @@
       "source_file": "backend/index.js",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index_readlessons",
-      "target": "backend_index_ensuredatafile",
-      "confidence_score": 1.0
+      "target": "backend_index_ensuredatafile"
     },
     {
       "relation": "calls",
@@ -1491,9 +1572,9 @@
       "source_file": "backend/index.js",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index_readstudents",
-      "target": "backend_index_ensuredatafile",
-      "confidence_score": 1.0
+      "target": "backend_index_ensuredatafile"
     },
     {
       "relation": "calls",
@@ -1502,9 +1583,9 @@
       "source_file": "backend/index.js",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index_writelessons",
-      "target": "backend_index_ensuredatafile",
-      "confidence_score": 1.0
+      "target": "backend_index_ensuredatafile"
     },
     {
       "relation": "calls",
@@ -1513,9 +1594,9 @@
       "source_file": "backend/index.js",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index_writestudents",
-      "target": "backend_index_ensuredatafile",
-      "confidence_score": 1.0
+      "target": "backend_index_ensuredatafile"
     },
     {
       "relation": "calls",
@@ -1524,9 +1605,9 @@
       "source_file": "backend/index.js",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index_writestudents",
-      "target": "backend_index_atomicwrite",
-      "confidence_score": 1.0
+      "target": "backend_index_atomicwrite"
     },
     {
       "relation": "calls",
@@ -1535,9 +1616,9 @@
       "source_file": "backend/index.js",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_index_writelessons",
-      "target": "backend_index_atomicwrite",
-      "confidence_score": 1.0
+      "target": "backend_index_atomicwrite"
     },
     {
       "relation": "contains",
@@ -1545,9 +1626,9 @@
       "source_file": "backend/package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_author",
-      "confidence_score": 1.0
+      "target": "backend_package_author"
     },
     {
       "relation": "contains",
@@ -1555,9 +1636,9 @@
       "source_file": "backend/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_dependencies",
-      "confidence_score": 1.0
+      "target": "backend_package_dependencies"
     },
     {
       "relation": "contains",
@@ -1565,9 +1646,9 @@
       "source_file": "backend/package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_description",
-      "confidence_score": 1.0
+      "target": "backend_package_description"
     },
     {
       "relation": "contains",
@@ -1575,9 +1656,9 @@
       "source_file": "backend/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_keywords",
-      "confidence_score": 1.0
+      "target": "backend_package_keywords"
     },
     {
       "relation": "contains",
@@ -1585,9 +1666,9 @@
       "source_file": "backend/package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_license",
-      "confidence_score": 1.0
+      "target": "backend_package_license"
     },
     {
       "relation": "contains",
@@ -1595,9 +1676,9 @@
       "source_file": "backend/package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_main",
-      "confidence_score": 1.0
+      "target": "backend_package_main"
     },
     {
       "relation": "contains",
@@ -1605,9 +1686,9 @@
       "source_file": "backend/package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_name",
-      "confidence_score": 1.0
+      "target": "backend_package_name"
     },
     {
       "relation": "contains",
@@ -1615,9 +1696,9 @@
       "source_file": "backend/package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_scripts",
-      "confidence_score": 1.0
+      "target": "backend_package_scripts"
     },
     {
       "relation": "contains",
@@ -1625,9 +1706,9 @@
       "source_file": "backend/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_type",
-      "confidence_score": 1.0
+      "target": "backend_package_type"
     },
     {
       "relation": "contains",
@@ -1635,9 +1716,9 @@
       "source_file": "backend/package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package",
-      "target": "backend_package_version",
-      "confidence_score": 1.0
+      "target": "backend_package_version"
     },
     {
       "relation": "contains",
@@ -1645,9 +1726,9 @@
       "source_file": "backend/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package_scripts",
-      "target": "backend_package_scripts_test",
-      "confidence_score": 1.0
+      "target": "backend_package_scripts_test"
     },
     {
       "relation": "contains",
@@ -1655,9 +1736,9 @@
       "source_file": "backend/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package_dependencies",
-      "target": "backend_package_dependencies_cors",
-      "confidence_score": 1.0
+      "target": "backend_package_dependencies_cors"
     },
     {
       "relation": "contains",
@@ -1665,9 +1746,9 @@
       "source_file": "backend/package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package_dependencies",
-      "target": "backend_package_dependencies_express",
-      "confidence_score": 1.0
+      "target": "backend_package_dependencies_express"
     },
     {
       "relation": "contains",
@@ -1675,9 +1756,9 @@
       "source_file": "backend/package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package_dependencies",
-      "target": "backend_package_dependencies_qrcode_terminal",
-      "confidence_score": 1.0
+      "target": "backend_package_dependencies_qrcode_terminal"
     },
     {
       "relation": "contains",
@@ -1685,9 +1766,9 @@
       "source_file": "backend/package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package_dependencies",
-      "target": "backend_package_dependencies_socket_io",
-      "confidence_score": 1.0
+      "target": "backend_package_dependencies_socket_io"
     },
     {
       "relation": "contains",
@@ -1695,9 +1776,9 @@
       "source_file": "backend/package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_package_dependencies",
-      "target": "backend_package_dependencies_whatsapp_web_js",
-      "confidence_score": 1.0
+      "target": "backend_package_dependencies_whatsapp_web_js"
     },
     {
       "relation": "contains",
@@ -1705,9 +1786,9 @@
       "source_file": "firebase.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "firebase",
-      "target": "firebase_firestore",
-      "confidence_score": 1.0
+      "target": "firebase_firestore"
     },
     {
       "relation": "imports",
@@ -1716,9 +1797,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "context": "import",
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies_firebase",
-      "target": "firebase",
-      "confidence_score": 1.0
+      "target": "firebase"
     },
     {
       "relation": "contains",
@@ -1726,9 +1807,9 @@
       "source_file": "firebase.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "firebase_firestore",
-      "target": "firebase_firestore_database",
-      "confidence_score": 1.0
+      "target": "firebase_firestore_database"
     },
     {
       "relation": "contains",
@@ -1736,9 +1817,9 @@
       "source_file": "firebase.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "firebase_firestore",
-      "target": "firebase_firestore_indexes",
-      "confidence_score": 1.0
+      "target": "firebase_firestore_indexes"
     },
     {
       "relation": "contains",
@@ -1746,9 +1827,9 @@
       "source_file": "firebase.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "firebase_firestore",
-      "target": "firebase_firestore_location",
-      "confidence_score": 1.0
+      "target": "firebase_firestore_location"
     },
     {
       "relation": "contains",
@@ -1756,9 +1837,9 @@
       "source_file": "firebase.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "firebase_firestore",
-      "target": "firebase_firestore_rules",
-      "confidence_score": 1.0
+      "target": "firebase_firestore_rules"
     },
     {
       "relation": "contains",
@@ -1766,9 +1847,9 @@
       "source_file": "firestore.indexes.json",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "firestore_indexes",
-      "target": "firestore_indexes_fieldoverrides",
-      "confidence_score": 1.0
+      "target": "firestore_indexes_fieldoverrides"
     },
     {
       "relation": "contains",
@@ -1776,9 +1857,9 @@
       "source_file": "firestore.indexes.json",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "firestore_indexes",
-      "target": "firestore_indexes_indexes",
-      "confidence_score": 1.0
+      "target": "firestore_indexes_indexes"
     },
     {
       "relation": "contains",
@@ -1786,9 +1867,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package",
-      "target": "frontend_package_dependencies",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies"
     },
     {
       "relation": "contains",
@@ -1796,9 +1877,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package",
-      "target": "frontend_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1806,9 +1887,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package",
-      "target": "frontend_package_name",
-      "confidence_score": 1.0
+      "target": "frontend_package_name"
     },
     {
       "relation": "contains",
@@ -1816,9 +1897,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package",
-      "target": "frontend_package_private",
-      "confidence_score": 1.0
+      "target": "frontend_package_private"
     },
     {
       "relation": "contains",
@@ -1826,9 +1907,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package",
-      "target": "frontend_package_scripts",
-      "confidence_score": 1.0
+      "target": "frontend_package_scripts"
     },
     {
       "relation": "contains",
@@ -1836,9 +1917,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package",
-      "target": "frontend_package_type",
-      "confidence_score": 1.0
+      "target": "frontend_package_type"
     },
     {
       "relation": "contains",
@@ -1846,9 +1927,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package",
-      "target": "frontend_package_version",
-      "confidence_score": 1.0
+      "target": "frontend_package_version"
     },
     {
       "relation": "contains",
@@ -1856,9 +1937,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_build",
-      "confidence_score": 1.0
+      "target": "frontend_package_scripts_build"
     },
     {
       "relation": "contains",
@@ -1866,9 +1947,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "frontend_package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -1876,9 +1957,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_lint",
-      "confidence_score": 1.0
+      "target": "frontend_package_scripts_lint"
     },
     {
       "relation": "contains",
@@ -1886,9 +1967,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_preview",
-      "confidence_score": 1.0
+      "target": "frontend_package_scripts_preview"
     },
     {
       "relation": "contains",
@@ -1896,9 +1977,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_firebase",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_firebase"
     },
     {
       "relation": "contains",
@@ -1906,9 +1987,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_lucide_react",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_lucide_react"
     },
     {
       "relation": "contains",
@@ -1916,9 +1997,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_rdndmb_html5_to_touch",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_rdndmb_html5_to_touch"
     },
     {
       "relation": "contains",
@@ -1926,9 +2007,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react"
     },
     {
       "relation": "contains",
@@ -1936,9 +2017,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react_dnd"
     },
     {
       "relation": "contains",
@@ -1946,9 +2027,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd_html5_backend",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react_dnd_html5_backend"
     },
     {
       "relation": "contains",
@@ -1956,9 +2037,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd_multi_backend",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react_dnd_multi_backend"
     },
     {
       "relation": "contains",
@@ -1966,9 +2047,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dnd_touch_backend",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react_dnd_touch_backend"
     },
     {
       "relation": "contains",
@@ -1976,9 +2057,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dom",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react_dom"
     },
     {
       "relation": "contains",
@@ -1986,9 +2067,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_socket_io_client",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_socket_io_client"
     },
     {
       "relation": "contains",
@@ -1996,9 +2077,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_eslint"
     },
     {
       "relation": "contains",
@@ -2006,9 +2087,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_js",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_eslint_js"
     },
     {
       "relation": "contains",
@@ -2016,9 +2097,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_plugin_react_hooks",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_eslint_plugin_react_hooks"
     },
     {
       "relation": "contains",
@@ -2026,9 +2107,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_plugin_react_refresh",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_eslint_plugin_react_refresh"
     },
     {
       "relation": "contains",
@@ -2036,9 +2117,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_globals",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_globals"
     },
     {
       "relation": "contains",
@@ -2046,9 +2127,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_types_react",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_types_react"
     },
     {
       "relation": "contains",
@@ -2056,9 +2137,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_types_react_dom",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_types_react_dom"
     },
     {
       "relation": "contains",
@@ -2066,9 +2147,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_vite",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_vite"
     },
     {
       "relation": "contains",
@@ -2076,9 +2157,9 @@
       "source_file": "frontend/package.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_vitejs_plugin_react_swc",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_vitejs_plugin_react_swc"
     },
     {
       "relation": "imports_from",
@@ -2087,9 +2168,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_dayview",
-      "confidence_score": 1.0
+      "target": "components_dayview"
     },
     {
       "relation": "imports_from",
@@ -2098,9 +2179,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_header",
-      "confidence_score": 1.0
+      "target": "components_header"
     },
     {
       "relation": "imports_from",
@@ -2109,9 +2190,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_sidebar",
-      "confidence_score": 1.0
+      "target": "components_sidebar"
     },
     {
       "relation": "imports_from",
@@ -2120,9 +2201,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_studentseditor",
-      "confidence_score": 1.0
+      "target": "components_studentseditor"
     },
     {
       "relation": "imports_from",
@@ -2131,9 +2212,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_viewtoggle",
-      "confidence_score": 1.0
+      "target": "components_viewtoggle"
     },
     {
       "relation": "imports_from",
@@ -2142,9 +2223,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "components_weekview",
-      "confidence_score": 1.0
+      "target": "components_weekview"
     },
     {
       "relation": "imports_from",
@@ -2153,9 +2234,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "context_studentscontext",
-      "confidence_score": 1.0
+      "target": "context_studentscontext"
     },
     {
       "relation": "imports",
@@ -2164,9 +2245,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "context_studentscontext_usestudents",
-      "confidence_score": 1.0
+      "target": "context_studentscontext_usestudents"
     },
     {
       "relation": "contains",
@@ -2174,9 +2255,9 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -2185,9 +2266,20 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_firebase",
-      "confidence_score": 1.0
+      "target": "src_firebase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "src_firebase_lessonsref"
     },
     {
       "relation": "imports",
@@ -2197,7 +2289,7 @@
       "source_location": "L9",
       "weight": 1.0,
       "source": "src_app",
-      "target": "src_firebase_lessonsref",
+      "target": "src_firebase_skipsref",
       "confidence_score": 1.0
     },
     {
@@ -2207,8 +2299,41 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "utils_dateutils",
+      "target": "utils_dateutils"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "utils_dateutils_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "utils_dateutils_formattimeslot"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "utils_dateutils_getslotweekday",
       "confidence_score": 1.0
     },
     {
@@ -2219,7 +2344,7 @@
       "source_location": "L7",
       "weight": 1.0,
       "source": "src_app",
-      "target": "utils_dateutils_formattimeslot",
+      "target": "utils_dateutils_getweekdates",
       "confidence_score": 1.0
     },
     {
@@ -2229,9 +2354,9 @@
       "source_file": "frontend/src/main.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_app",
-      "confidence_score": 1.0
+      "target": "src_app"
     },
     {
       "relation": "calls",
@@ -2240,8 +2365,19 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "context_studentscontext_usestudents",
+      "target": "context_studentscontext_usestudents"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "utils_dateutils_formatdate",
       "confidence_score": 1.0
     },
     {
@@ -2251,8 +2387,30 @@
       "source_file": "frontend/src/App.jsx",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "utils_dateutils_formattimeslot",
+      "target": "utils_dateutils_formattimeslot"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "utils_dateutils_getslotweekday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.jsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "utils_dateutils_getweekdates",
       "confidence_score": 1.0
     },
     {
@@ -2261,9 +2419,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview",
-      "target": "components_dayview_dayview",
-      "confidence_score": 1.0
+      "target": "components_dayview_dayview"
     },
     {
       "relation": "imports_from",
@@ -2272,9 +2430,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview",
-      "target": "utils_constants",
-      "confidence_score": 1.0
+      "target": "utils_constants"
     },
     {
       "relation": "imports",
@@ -2283,9 +2441,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview",
-      "target": "utils_constants_hours",
-      "confidence_score": 1.0
+      "target": "utils_constants_hours"
     },
     {
       "relation": "imports_from",
@@ -2294,9 +2452,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview",
-      "target": "utils_dateutils",
-      "confidence_score": 1.0
+      "target": "utils_dateutils"
     },
     {
       "relation": "imports",
@@ -2305,9 +2463,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview",
-      "target": "utils_dateutils_formathourrange",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formathourrange"
     },
     {
       "relation": "imports",
@@ -2316,9 +2474,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview",
-      "target": "utils_dateutils_formattimeslot",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formattimeslot"
     },
     {
       "relation": "calls",
@@ -2327,9 +2485,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview_dayview",
-      "target": "utils_dateutils_formathourrange",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formathourrange"
     },
     {
       "relation": "calls",
@@ -2338,9 +2496,9 @@
       "source_file": "frontend/src/components/DayView.jsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_dayview_dayview",
-      "target": "utils_dateutils_formattimeslot",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formattimeslot"
     },
     {
       "relation": "contains",
@@ -2348,9 +2506,9 @@
       "source_file": "frontend/src/components/Header.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_header",
-      "target": "components_header_header",
-      "confidence_score": 1.0
+      "target": "components_header_header"
     },
     {
       "relation": "contains",
@@ -2358,9 +2516,9 @@
       "source_file": "frontend/src/components/Sidebar.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_sidebar",
-      "target": "components_sidebar_sidebar",
-      "confidence_score": 1.0
+      "target": "components_sidebar_sidebar"
     },
     {
       "relation": "imports_from",
@@ -2369,9 +2527,9 @@
       "source_file": "frontend/src/components/Sidebar.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_sidebar",
-      "target": "context_studentscontext",
-      "confidence_score": 1.0
+      "target": "context_studentscontext"
     },
     {
       "relation": "imports",
@@ -2380,9 +2538,9 @@
       "source_file": "frontend/src/components/Sidebar.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_sidebar",
-      "target": "context_studentscontext_usestudents",
-      "confidence_score": 1.0
+      "target": "context_studentscontext_usestudents"
     },
     {
       "relation": "calls",
@@ -2391,8 +2549,28 @@
       "source_file": "frontend/src/components/Sidebar.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_sidebar_sidebar",
-      "target": "context_studentscontext_usestudents",
+      "target": "context_studentscontext_usestudents"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "components_studentseditor_end_hours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "components_studentseditor_groupfixed",
       "confidence_score": 1.0
     },
     {
@@ -2401,8 +2579,18 @@
       "source_file": "frontend/src/components/StudentsEditor.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_studentseditor",
-      "target": "components_studentseditor_studentseditor",
+      "target": "components_studentseditor_studentseditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "components_studentseditor_tohour",
       "confidence_score": 1.0
     },
     {
@@ -2412,9 +2600,9 @@
       "source_file": "frontend/src/components/StudentsEditor.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_studentseditor",
-      "target": "context_studentscontext",
-      "confidence_score": 1.0
+      "target": "context_studentscontext"
     },
     {
       "relation": "imports",
@@ -2423,8 +2611,74 @@
       "source_file": "frontend/src/components/StudentsEditor.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_studentseditor",
-      "target": "context_studentscontext_usestudents",
+      "target": "context_studentscontext_usestudents"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "utils_constants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "utils_constants_days_of_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "utils_constants_hours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "utils_dateutils",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_studentseditor",
+      "target": "utils_dateutils_formathourdisplay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "components_studentseditor_studentseditor",
+      "target": "components_studentseditor_groupfixed",
       "confidence_score": 1.0
     },
     {
@@ -2434,8 +2688,19 @@
       "source_file": "frontend/src/components/StudentsEditor.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_studentseditor_studentseditor",
-      "target": "context_studentscontext_usestudents",
+      "target": "context_studentscontext_usestudents"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/StudentsEditor.jsx",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "components_studentseditor_studentseditor",
+      "target": "utils_dateutils_formathourdisplay",
       "confidence_score": 1.0
     },
     {
@@ -2444,9 +2709,9 @@
       "source_file": "frontend/src/components/ViewToggle.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_viewtoggle",
-      "target": "components_viewtoggle_viewtoggle",
-      "confidence_score": 1.0
+      "target": "components_viewtoggle_viewtoggle"
     },
     {
       "relation": "contains",
@@ -2454,9 +2719,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "components_weekview_weekview",
-      "confidence_score": 1.0
+      "target": "components_weekview_weekview"
     },
     {
       "relation": "imports_from",
@@ -2465,9 +2730,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "utils_constants",
-      "confidence_score": 1.0
+      "target": "utils_constants"
     },
     {
       "relation": "imports",
@@ -2476,9 +2741,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "utils_constants_days_of_week",
-      "confidence_score": 1.0
+      "target": "utils_constants_days_of_week"
     },
     {
       "relation": "imports",
@@ -2487,9 +2752,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "utils_constants_hours",
-      "confidence_score": 1.0
+      "target": "utils_constants_hours"
     },
     {
       "relation": "imports_from",
@@ -2498,9 +2763,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "utils_dateutils",
-      "confidence_score": 1.0
+      "target": "utils_dateutils"
     },
     {
       "relation": "imports",
@@ -2509,9 +2774,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "utils_dateutils_formathourrange",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formathourrange"
     },
     {
       "relation": "imports",
@@ -2520,9 +2785,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "utils_dateutils_formattimeslot",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formattimeslot"
     },
     {
       "relation": "imports",
@@ -2531,9 +2796,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview",
-      "target": "utils_dateutils_getweekdates",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_getweekdates"
     },
     {
       "relation": "calls",
@@ -2542,9 +2807,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview_weekview",
-      "target": "utils_dateutils_formathourrange",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formathourrange"
     },
     {
       "relation": "calls",
@@ -2553,9 +2818,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview_weekview",
-      "target": "utils_dateutils_formattimeslot",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formattimeslot"
     },
     {
       "relation": "calls",
@@ -2564,9 +2829,9 @@
       "source_file": "frontend/src/components/WeekView.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_weekview_weekview",
-      "target": "utils_dateutils_getweekdates",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_getweekdates"
     },
     {
       "relation": "contains",
@@ -2574,9 +2839,9 @@
       "source_file": "frontend/src/context/StudentsContext.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_studentscontext",
-      "target": "context_studentscontext_studentscontext",
-      "confidence_score": 1.0
+      "target": "context_studentscontext_studentscontext"
     },
     {
       "relation": "contains",
@@ -2584,9 +2849,9 @@
       "source_file": "frontend/src/context/StudentsContext.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_studentscontext",
-      "target": "context_studentscontext_studentsprovider",
-      "confidence_score": 1.0
+      "target": "context_studentscontext_studentsprovider"
     },
     {
       "relation": "contains",
@@ -2594,9 +2859,9 @@
       "source_file": "frontend/src/context/StudentsContext.jsx",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_studentscontext",
-      "target": "context_studentscontext_usestudents",
-      "confidence_score": 1.0
+      "target": "context_studentscontext_usestudents"
     },
     {
       "relation": "imports_from",
@@ -2605,9 +2870,9 @@
       "source_file": "frontend/src/context/StudentsContext.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_studentscontext",
-      "target": "src_firebase",
-      "confidence_score": 1.0
+      "target": "src_firebase"
     },
     {
       "relation": "imports",
@@ -2617,7 +2882,62 @@
       "source_location": "L3",
       "weight": 1.0,
       "source": "context_studentscontext",
-      "target": "src_firebase_studentsref",
+      "target": "src_firebase_recurringref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/StudentsContext.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "context_studentscontext",
+      "target": "src_firebase_studentsref"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/StudentsContext.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "context_studentscontext",
+      "target": "utils_constants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/StudentsContext.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "context_studentscontext",
+      "target": "utils_constants_hours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/StudentsContext.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "context_studentscontext",
+      "target": "utils_dateutils",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/context/StudentsContext.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "context_studentscontext",
+      "target": "utils_dateutils_formathourdisplay",
       "confidence_score": 1.0
     },
     {
@@ -2627,9 +2947,9 @@
       "source_file": "frontend/src/main.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "context_studentscontext",
-      "confidence_score": 1.0
+      "target": "context_studentscontext"
     },
     {
       "relation": "imports",
@@ -2638,9 +2958,9 @@
       "source_file": "frontend/src/main.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "context_studentscontext_studentsprovider",
-      "confidence_score": 1.0
+      "target": "context_studentscontext_studentsprovider"
     },
     {
       "relation": "contains",
@@ -2648,9 +2968,9 @@
       "source_file": "frontend/src/firebase.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_firebase",
-      "target": "src_firebase_app",
-      "confidence_score": 1.0
+      "target": "src_firebase_app"
     },
     {
       "relation": "contains",
@@ -2658,9 +2978,9 @@
       "source_file": "frontend/src/firebase.js",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_firebase",
-      "target": "src_firebase_db",
-      "confidence_score": 1.0
+      "target": "src_firebase_db"
     },
     {
       "relation": "contains",
@@ -2668,9 +2988,9 @@
       "source_file": "frontend/src/firebase.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_firebase",
-      "target": "src_firebase_firebaseconfig",
-      "confidence_score": 1.0
+      "target": "src_firebase_firebaseconfig"
     },
     {
       "relation": "contains",
@@ -2678,8 +2998,28 @@
       "source_file": "frontend/src/firebase.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_firebase",
-      "target": "src_firebase_lessonsref",
+      "target": "src_firebase_lessonsref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_firebase",
+      "target": "src_firebase_recurringref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/firebase.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_firebase",
+      "target": "src_firebase_skipsref",
       "confidence_score": 1.0
     },
     {
@@ -2688,9 +3028,9 @@
       "source_file": "frontend/src/firebase.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_firebase",
-      "target": "src_firebase_studentsref",
-      "confidence_score": 1.0
+      "target": "src_firebase_studentsref"
     },
     {
       "relation": "contains",
@@ -2698,9 +3038,9 @@
       "source_file": "frontend/src/utils/constants.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_constants",
-      "target": "utils_constants_days_of_week",
-      "confidence_score": 1.0
+      "target": "utils_constants_days_of_week"
     },
     {
       "relation": "contains",
@@ -2708,9 +3048,9 @@
       "source_file": "frontend/src/utils/constants.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_constants",
-      "target": "utils_constants_hours",
-      "confidence_score": 1.0
+      "target": "utils_constants_hours"
     },
     {
       "relation": "contains",
@@ -2718,9 +3058,9 @@
       "source_file": "frontend/src/utils/dateUtils.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_dateutils",
-      "target": "utils_dateutils_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formatdate"
     },
     {
       "relation": "contains",
@@ -2728,9 +3068,9 @@
       "source_file": "frontend/src/utils/dateUtils.js",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_dateutils",
-      "target": "utils_dateutils_formathourdisplay",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formathourdisplay"
     },
     {
       "relation": "contains",
@@ -2738,9 +3078,9 @@
       "source_file": "frontend/src/utils/dateUtils.js",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_dateutils",
-      "target": "utils_dateutils_formathourrange",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formathourrange"
     },
     {
       "relation": "contains",
@@ -2748,8 +3088,18 @@
       "source_file": "frontend/src/utils/dateUtils.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_dateutils",
-      "target": "utils_dateutils_formattimeslot",
+      "target": "utils_dateutils_formattimeslot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/utils/dateUtils.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "utils_dateutils",
+      "target": "utils_dateutils_getslotweekday",
       "confidence_score": 1.0
     },
     {
@@ -2758,9 +3108,9 @@
       "source_file": "frontend/src/utils/dateUtils.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_dateutils",
-      "target": "utils_dateutils_getweekdates",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_getweekdates"
     },
     {
       "relation": "calls",
@@ -2769,9 +3119,9 @@
       "source_file": "frontend/src/utils/dateUtils.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "utils_dateutils_formattimeslot",
-      "target": "utils_dateutils_formatdate",
-      "confidence_score": 1.0
+      "target": "utils_dateutils_formatdate"
     },
     {
       "relation": "contains",
@@ -2779,9 +3129,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_teacherscheduler",
-      "confidence_score": 1.0
+      "target": "readme_teacherscheduler"
     },
     {
       "relation": "contains",
@@ -2789,9 +3139,9 @@
       "source_file": "README.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_teacherscheduler",
-      "target": "readme_data",
-      "confidence_score": 1.0
+      "target": "readme_data"
     },
     {
       "relation": "contains",
@@ -2799,8 +3149,38 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_teacherscheduler",
-      "target": "readme_features",
+      "target": "readme_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "readme_teacherscheduler",
+      "target": "readme_firebase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_teacherscheduler",
+      "target": "readme_getting_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "readme_teacherscheduler",
+      "target": "readme_run_locally_development",
       "confidence_score": 1.0
     },
     {
@@ -2810,7 +3190,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "readme_teacherscheduler",
-      "target": "readme_getting_started",
+      "target": "readme_run_with_docker_recommended",
       "confidence_score": 1.0
     },
     {
@@ -2819,39 +3199,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_teacherscheduler",
-      "target": "readme_stack",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L28",
-      "weight": 1.0,
-      "source": "readme_getting_started",
-      "target": "readme_backend",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L42",
-      "weight": 1.0,
-      "source": "readme_getting_started",
-      "target": "readme_frontend",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "readme_getting_started",
-      "target": "readme_prerequisites",
-      "confidence_score": 1.0
+      "target": "readme_stack"
     },
     {
       "relation": "contains",
@@ -2859,9 +3209,9 @@
       "source_file": "frontend/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_readme",
-      "target": "frontend_readme_react_vite",
-      "confidence_score": 1.0
+      "target": "frontend_readme_react_vite"
     },
     {
       "relation": "contains",
@@ -2869,9 +3219,9 @@
       "source_file": "frontend/README.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_readme_react_vite",
-      "target": "frontend_readme_expanding_the_eslint_configuration",
-      "confidence_score": 1.0
+      "target": "frontend_readme_expanding_the_eslint_configuration"
     },
     {
       "relation": "contains",
@@ -2879,11 +3229,41 @@
       "source_file": "frontend/README.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_readme_react_vite",
-      "target": "frontend_readme_react_compiler",
-      "confidence_score": 1.0
+      "target": "frontend_readme_react_compiler"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_getting_started",
+      "target": "readme_backend"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_getting_started",
+      "target": "readme_frontend"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_getting_started",
+      "target": "readme_prerequisites"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "30beb97c9f8553f77822e13d30ea636b69b35b40"
+  "built_at_commit": "9e34420bcf8ed9f8d971dfaf4fcc21f5f85e0a0b"
 }

@@ -1,14 +1,18 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { onSnapshot, setDoc, updateDoc, deleteField } from 'firebase/firestore';
-import { studentsRef } from '../firebase';
+import { studentsRef, recurringRef } from '../firebase';
+import { HOURS } from '../utils/constants';
+import { formatHourDisplay } from '../utils/dateUtils';
 
 const StudentsContext = createContext(null);
 
 export const StudentsProvider = ({ children }) => {
   const [students, setStudentsState] = useState({});
+  const [recurring, setRecurring] = useState({});
 
-  // Subscribe to students updates via Firestore
+  // Subscribe to students / fixed lessons updates via Firestore
   useEffect(() => onSnapshot(studentsRef, (snap) => setStudentsState(snap.data() || {})), []);
+  useEffect(() => onSnapshot(recurringRef, (snap) => setRecurring(snap.data() || {})), []);
 
   const addStudent = async (name, phone) => {
     const trimmed = String(name || '').trim();
@@ -28,6 +32,8 @@ export const StudentsProvider = ({ children }) => {
     const trimmed = String(name || '').trim();
     try {
       await updateDoc(studentsRef, { [trimmed]: deleteField() });
+      const fixedKeys = Object.keys(recurring).filter(k => recurring[k] === trimmed);
+      if (fixedKeys.length) await removeFixed(fixedKeys);
       return { ok: true };
     } catch (e) {
       return { ok: false, error: e.message || 'נכשל להסיר' };
@@ -50,7 +56,39 @@ export const StudentsProvider = ({ children }) => {
     }
   };
 
-  const value = useMemo(() => ({ students, addStudent, removeStudent, setStudents }), [students]);
+  // Fixed weekly lesson: same weekday, every half-hour slot in [from, to)
+  const addFixed = async (name, day, from, to) => {
+    if (!students[name]) return { ok: false, error: 'בחר תלמיד' };
+    if (!(from < to)) return { ok: false, error: 'שעת הסיום חייבת להיות אחרי שעת ההתחלה' };
+    const slots = {};
+    for (const hour of HOURS.filter(h => h >= from && h < to)) {
+      const key = `${day}-${formatHourDisplay(hour)}`;
+      if (recurring[key] && recurring[key] !== name) {
+        return { ok: false, error: `${formatHourDisplay(hour)} כבר תפוס ע"י ${recurring[key]}` };
+      }
+      slots[key] = name;
+    }
+    try {
+      await setDoc(recurringRef, slots, { merge: true });
+      return { ok: true };
+    } catch (e) {
+      return { ok: false, error: e.message || 'נכשל הוספה' };
+    }
+  };
+
+  const removeFixed = async (keys) => {
+    try {
+      await updateDoc(recurringRef, Object.fromEntries(keys.map(k => [k, deleteField()])));
+      return { ok: true };
+    } catch (e) {
+      return { ok: false, error: e.message || 'נכשל להסיר' };
+    }
+  };
+
+  const value = useMemo(
+    () => ({ students, addStudent, removeStudent, setStudents, recurring, addFixed, removeFixed }),
+    [students, recurring]
+  );
 
   return (
     <StudentsContext.Provider value={value}>{children}</StudentsContext.Provider>

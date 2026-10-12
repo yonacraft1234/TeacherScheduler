@@ -18,7 +18,19 @@ export const getWeekDates = (date) => {
  * @returns {string} Formatted date string
  */
 export const formatDate = (date) => {
-  return date.toISOString().split('T')[0];
+  const m = (date.getMonth() + 1).toString().padStart(2, '0');
+  const d = date.getDate().toString().padStart(2, '0');
+  return `${date.getFullYear()}-${m}-${d}`;
+};
+
+/**
+ * Get the weekday (0 = Sunday) of a time slot identifier
+ * @param {string} timeSlot - "YYYY-MM-DD-H:MM"
+ * @returns {number} Weekday index
+ */
+export const getSlotWeekday = (timeSlot) => {
+  const [y, m, d] = timeSlot.substring(0, 10).split('-').map(Number);
+  return new Date(y, m - 1, d).getDay();
 };
 
 /**

@@ -1,12 +1,12 @@
 {
   "backend/index.js": {
-    "mtime": 1772821659.7710512,
-    "ast_hash": "1e7020247aeb2fafd0f0637bf7683a06",
+    "mtime": 1791817013.8314328,
+    "ast_hash": "f36819de3f70f23a7c899211c9bf2485",
     "semantic_hash": ""
   },
   "backend/package.json": {
-    "mtime": 1761512902.60254,
-    "ast_hash": "1bf5f010a36b3e23ba0de632d904b4ef",
+    "mtime": 1791816061.0584846,
+    "ast_hash": "0846b592b9bd2dddc28bb16b1319f961",
     "semantic_hash": ""
   },
   "firebase.json": {
@@ -30,13 +30,13 @@
     "semantic_hash": ""
   },
   "frontend/src/App.jsx": {
-    "mtime": 1791814676.4762576,
-    "ast_hash": "f80e7762160106b25e0bf4f6f1a15684",
+    "mtime": 1791823423.2748122,
+    "ast_hash": "adc27a892b017e6e1e5895a26f49e8d9",
     "semantic_hash": ""
   },
   "frontend/src/components/DayView.jsx": {
-    "mtime": 1762006767.0622885,
-    "ast_hash": "d9d60ce6424a2dff8248cbf592a31e14",
+    "mtime": 1791823437.7793977,
+    "ast_hash": "2fbf7431ce51fa2fd74444d10336e6e4",
     "semantic_hash": ""
   },
   "frontend/src/components/Header.jsx": {
@@ -50,28 +50,28 @@
     "semantic_hash": ""
   },
   "frontend/src/components/StudentsEditor.jsx": {
-    "mtime": 1761507162.700992,
-    "ast_hash": "33275c3ff2ff3fccd759e743b311f6b0",
+    "mtime": 1791824045.9803483,
+    "ast_hash": "ad710678c47a30bb81ac6c1806d80724",
     "semantic_hash": ""
   },
   "frontend/src/components/ViewToggle.jsx": {
-    "mtime": 1761506980.4841018,
-    "ast_hash": "225ad8c1284efd21536716c1d37e72cc",
+    "mtime": 1791817536.499688,
+    "ast_hash": "fb4f319901cbcf4d3044a8f81ac3522e",
     "semantic_hash": ""
   },
   "frontend/src/components/WeekView.jsx": {
-    "mtime": 1762006762.0543416,
-    "ast_hash": "15b2e9270d8cb5f12d0d75417090d148",
+    "mtime": 1791823437.7803988,
+    "ast_hash": "82dcfa86f3685c9aa41ed32aabdcb531",
     "semantic_hash": ""
   },
   "frontend/src/context/StudentsContext.jsx": {
-    "mtime": 1791814676.474755,
-    "ast_hash": "5f711fc70bf5dc64a7db3a31ef5612bd",
+    "mtime": 1791823409.0348055,
+    "ast_hash": "20d0b3f943354e0553384fc36cfb1e0b",
     "semantic_hash": ""
   },
   "frontend/src/firebase.js": {
-    "mtime": 1791814665.241595,
-    "ast_hash": "4138231c1d8a8b827fb4839593d2db51",
+    "mtime": 1791823373.793995,
+    "ast_hash": "7219f46cbecf8b3cd008e491f4d19bb4",
     "semantic_hash": ""
   },
   "frontend/src/main.jsx": {
@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "frontend/src/utils/dateUtils.js": {
-    "mtime": 1761496587.196049,
-    "ast_hash": "2ce85ac0375cd9ec2db931cb1a91bde7",
+    "mtime": 1791823409.0348055,
+    "ast_hash": "8311fb4899b382f312db628344e2e8cc",
     "semantic_hash": ""
   },
   "frontend/vite.config.js": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1780336725.3430016,
-    "ast_hash": "30d30c1d83301e2d26ff9cc5885857d5",
+    "mtime": 1791815160.5341747,
+    "ast_hash": "3b1a2597686a65ef7c68facb6d31709f",
     "semantic_hash": ""
   },
   "frontend/README.md": {
@@ -105,8 +105,13 @@
     "semantic_hash": ""
   },
   "frontend/index.html": {
-    "mtime": 1761506946.6955402,
-    "ast_hash": "9ebf36344c978cad4128130e4b454e30",
+    "mtime": 1791816558.7972777,
+    "ast_hash": "e6612ed5a05724fc17f447ef952b326a",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1791815130.1631637,
+    "ast_hash": "4f737e9d92eb76ff101dc76fae9b41a6",
     "semantic_hash": ""
   }
 }

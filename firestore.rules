@@ -2,7 +2,7 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /data/{docId} {
-      allow read, write: if docId == 'students' || docId == 'lessons';
+      allow read, write: if docId in ['students', 'lessons', 'recurring', 'skips'];
     }
   }
 }

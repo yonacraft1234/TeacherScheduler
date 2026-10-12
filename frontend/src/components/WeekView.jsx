@@ -1,9 +1,10 @@
 import React from 'react';
+import { Repeat } from 'lucide-react';
 import { HOURS, DAYS_OF_WEEK } from '../utils/constants';
 import { getWeekDates, formatTimeSlot, formatHourRange } from '../utils/dateUtils';
 import './WeekView.css';
 
-const WeekView = ({ currentDate, schedule, onDragOver, onDrop, onRemove }) => {
+const WeekView = ({ currentDate, schedule, fixedSlots, onDragOver, onDrop, onRemove }) => {
   const weekDates = getWeekDates(currentDate);
 
   return (
@@ -26,7 +27,8 @@ const WeekView = ({ currentDate, schedule, onDragOver, onDrop, onRemove }) => {
             {weekDates.map((date, i) => {
               const timeSlot = formatTimeSlot(date, hour);
               const assignedStudent = schedule[timeSlot];
-              
+              const isFixed = fixedSlots[timeSlot] === assignedStudent;
+
               return (
                 <div
                   key={i}
@@ -35,13 +37,16 @@ const WeekView = ({ currentDate, schedule, onDragOver, onDrop, onRemove }) => {
                   onDrop={() => onDrop(date, hour)}
                 >
                   {assignedStudent ? (
-                    <div className="week-student-assignment">
-                      <div className="week-student-name">{assignedStudent}</div>
+                    <div className={`week-student-assignment${isFixed ? ' fixed' : ''}`}>
+                      <div className="week-student-name">
+                        {isFixed && <Repeat size={12} className="week-fixed-icon" aria-label="שיעור קבוע" />}
+                        {assignedStudent}
+                      </div>
                       <button
                         onClick={() => onRemove(timeSlot)}
                         className="week-remove-button"
-                        aria-label="הסר"
-                        title="הסר"
+                        aria-label={isFixed ? 'הסר מהשבוע הזה' : 'הסר'}
+                        title={isFixed ? 'הסר מהשבוע הזה' : 'הסר'}
                       >
                         <svg
                         width="20"

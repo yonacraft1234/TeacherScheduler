@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import ViewToggle from './components/ViewToggle';
 import DayView from './components/DayView';
 import WeekView from './components/WeekView';
-import { formatTimeSlot } from './utils/dateUtils';
+import { formatTimeSlot, formatDate, getWeekDates, getSlotWeekday } from './utils/dateUtils';
 import { onSnapshot, setDoc } from 'firebase/firestore';
-import { lessonsRef } from './firebase';
+import { lessonsRef, skipsRef } from './firebase';
 import StudentsEditor from './components/StudentsEditor';
 import { useStudents } from './context/StudentsContext';
 import './App.css';
@@ -20,13 +20,30 @@ const App = () => {
     try { localStorage.setItem('viewMode', viewMode); } catch { /* storage unavailable */ }
   }, [viewMode]);
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [schedule, setSchedule] = useState({});
+  const [lessons, setLessons] = useState({});
+  const [skips, setSkips] = useState({});
   const [draggedStudent, setDraggedStudent] = useState(null);
   const [editorOpen, setEditorOpen] = useState(false);
-  const { students } = useStudents();
+  const { students, recurring } = useStudents();
 
-  // Subscribe to lessons updates via Firestore
-  useEffect(() => onSnapshot(lessonsRef, (snap) => setSchedule(snap.data() || {})), []);
+  // Subscribe to lessons / removed fixed occurrences via Firestore
+  useEffect(() => onSnapshot(lessonsRef, (snap) => setLessons(snap.data() || {})), []);
+  useEffect(() => onSnapshot(skipsRef, (snap) => setSkips(snap.data() || {})), []);
+
+  // Fixed lessons of the displayed week (minus removed occurrences); one-off lessons override them
+  const fixedSlots = useMemo(() => {
+    const slots = {};
+    for (const date of getWeekDates(currentDate)) {
+      for (const [key, name] of Object.entries(recurring)) {
+        const [day, time] = key.split('-');
+        const timeSlot = `${formatDate(date)}-${time}`;
+        if (Number(day) === date.getDay() && !skips[timeSlot]) slots[timeSlot] = name;
+      }
+    }
+    return slots;
+  }, [currentDate, recurring, skips]);
+
+  const schedule = useMemo(() => ({ ...fixedSlots, ...lessons }), [fixedSlots, lessons]);
 
   const handleDragStart = (studentName) => {
     setDraggedStudent(studentName);
@@ -39,7 +56,7 @@ const App = () => {
   const handleDrop = (date, hour) => {
     if (draggedStudent) {
       const timeSlot = formatTimeSlot(date, hour);
-      setSchedule(prev => {
+      setLessons(prev => {
         const next = { ...prev, [timeSlot]: draggedStudent };
         setDoc(lessonsRef, next).catch(console.error);
         return next;
@@ -49,12 +66,19 @@ const App = () => {
   };
 
   const removeFromSchedule = (timeSlot) => {
-    setSchedule(prev => {
-      const next = { ...prev };
-      delete next[timeSlot];
-      setDoc(lessonsRef, next).catch(console.error);
-      return next;
-    });
+    if (lessons[timeSlot]) {
+      setLessons(prev => {
+        const next = { ...prev };
+        delete next[timeSlot];
+        setDoc(lessonsRef, next).catch(console.error);
+        return next;
+      });
+    }
+    // Removing a fixed lesson from the table only cancels this week's occurrence
+    const time = timeSlot.split('-').slice(-1)[0];
+    if (recurring[`${getSlotWeekday(timeSlot)}-${time}`] && !skips[timeSlot]) {
+      setDoc(skipsRef, { [timeSlot]: true }, { merge: true }).catch(console.error);
+    }
   };
 
   const handleSendSMS = async () => {
@@ -134,6 +158,7 @@ const App = () => {
             <DayView
               currentDate={currentDate}
               schedule={schedule}
+              fixedSlots={fixedSlots}
               onDragOver={handleDragOver}
               onDrop={handleDrop}
               onRemove={removeFromSchedule}
@@ -142,6 +167,7 @@ const App = () => {
             <WeekView
               currentDate={currentDate}
               schedule={schedule}
+              fixedSlots={fixedSlots}
               onDragOver={handleDragOver}
               onDrop={handleDrop}
               onRemove={removeFromSchedule}

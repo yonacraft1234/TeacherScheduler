@@ -1,10 +1,10 @@
 import React from 'react';
-import { User } from 'lucide-react';
+import { User, Repeat } from 'lucide-react';
 import { HOURS } from '../utils/constants';
 import { formatTimeSlot, formatHourRange } from '../utils/dateUtils';
 import './DayView.css';
 
-const DayView = ({ currentDate, schedule, onDragOver, onDrop, onRemove }) => {
+const DayView = ({ currentDate, schedule, fixedSlots, onDragOver, onDrop, onRemove }) => {
   return (
     <div className="day-view">
       <div className="day-view-content">
@@ -20,7 +20,8 @@ const DayView = ({ currentDate, schedule, onDragOver, onDrop, onRemove }) => {
         {HOURS.map(hour => {
           const timeSlot = formatTimeSlot(currentDate, hour);
           const assignedStudent = schedule[timeSlot];
-          
+          const isFixed = fixedSlots[timeSlot] === assignedStudent;
+
             return (
             <div
               key={hour}
@@ -34,17 +35,18 @@ const DayView = ({ currentDate, schedule, onDragOver, onDrop, onRemove }) => {
               </div>
               {assignedStudent ? (
                 <div className="slot-content">
-                <div className="student-assignment">
+                <div className={`student-assignment${isFixed ? ' fixed' : ''}`}>
                   <div className="assignment-details">
                   <div className="student-info">
-                    <User size={16} />
+                    {isFixed ? <Repeat size={16} aria-label="שיעור קבוע" /> : <User size={16} />}
                     <span className="student-info-name">{assignedStudent}</span>
+                    {isFixed && <span className="fixed-badge">קבוע</span>}
                   </div>
                   <button
                     onClick={() => onRemove(timeSlot)}
                     className="remove-button"
-                    aria-label="הסר"
-                    title="הסר"
+                    aria-label={isFixed ? 'הסר מהשבוע הזה' : 'הסר'}
+                    title={isFixed ? 'הסר מהשבוע הזה' : 'הסר'}
                   >
                     <svg
                     width="20"

@@ -16,6 +16,10 @@ export const app = initializeApp(firebaseConfig);
 isSupported().then((ok) => ok && getAnalytics(app));
 export const db = getFirestore(app);
 
-// Data shapes: students { name: phone }, lessons { "YYYY-MM-DD-HH:MM": name }
+// Data shapes: students { name: phone }, lessons { "YYYY-MM-DD-HH:MM": name },
+// recurring { "<weekday 0-6>-HH:MM": name } (fixed weekly lessons),
+// skips { "YYYY-MM-DD-HH:MM": true } (single occurrences of a fixed lesson removed from the table)
 export const studentsRef = doc(db, 'data', 'students');
 export const lessonsRef = doc(db, 'data', 'lessons');
+export const recurringRef = doc(db, 'data', 'recurring');
+export const skipsRef = doc(db, 'data', 'skips');
